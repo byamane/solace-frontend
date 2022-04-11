@@ -1,7 +1,7 @@
 import { Link } from 'react-router-dom'
 import './NavBarBot.css'
 
-const NavBarBot = ({page}) => {
+const NavBarBot = (props) => {
   return (
     <>
       <nav id='nav-bar-bottom' className="navbar fixed-bottom navbar-light bg-light">
@@ -9,19 +9,17 @@ const NavBarBot = ({page}) => {
           <Link to='/home'>
             <i className='material-icons bot-nav-icon'>home</i>
           </Link>
-          <Link to='/restrooms'>
-            <i className='material-icons bot-nav-icon'>wc</i>
+          <Link to='/sleep'>
+            <i className='material-icons bot-nav-icon'>bedtime</i>
           </Link>
-          <Link 
-            to={page ? `/${page}/add` : '/home'}
-          >
-            <i className='material-icons bot-nav-icon dropup-toggle'>add_circle</i>
+          <Link to='/journal'>
+            <i className='material-icons bot-nav-icon dropup-toggle'>menu_book</i>
           </Link>
-          <Link to='/parkinglots'>
-            <i className='material-icons bot-nav-icon'>local_parking</i>
+          <Link to='/meditation'>
+            <i className='material-icons bot-nav-icon'>self_improvement</i>
           </Link>
-          <Link to='/restaurants'>
-            <i className='material-icons bot-nav-icon'>restaurant</i>
+          <Link to='/'>
+            <i className='material-icons bot-nav-icon'>logout</i>
           </Link>
         </div>
       </nav>

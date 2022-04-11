@@ -1,3 +1,5 @@
+import NavBarBot from "../../components/NavBarBot/NavBarBot";
+
 const Home = (props) => {
   return (  
     <>
@@ -5,6 +7,7 @@ const Home = (props) => {
         <h2>Home page!</h2>
         <a href="/">GO BACK</a>
       </div>
+      <NavBarBot></NavBarBot>
     </>
   );
 }
