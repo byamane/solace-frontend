@@ -19,7 +19,7 @@ const NavBarBot = (props) => {
             <i className='material-icons bot-nav-icon'>self_improvement</i>
           </Link>
           <Link to='/'>
-            <i className='material-icons bot-nav-icon'>logout</i>
+            <i onClick={props.handleLogout} className='material-icons bot-nav-icon'>logout</i>
           </Link>
         </div>
       </nav>
