@@ -10,8 +10,8 @@ import * as authService from './services/authService'
 
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
+  const [sleepLogs, setSleepLogs] = useState([])
   const navigate = useNavigate()
-  // console.log(user)
 
   const handleLogout = () => {
     authService.logout()
@@ -25,7 +25,6 @@ const App = () => {
 
   return (
     <>
-      {/* <NavBar user={user} handleLogout={handleLogout} /> */}
       <Routes>
         <Route 
           path="/" 
@@ -49,6 +48,7 @@ const App = () => {
           element={
             <SleepList
               user={user}
+              sleepLogs={sleepLogs}
             />
           }
         />
