@@ -56,8 +56,8 @@ const LoginForm = props => {
       </div>
       <div>
         <button className='button'>Log In</button>
-        <Link to="/">
-          <button>Cancel</button>
+        <Link to="/signup">
+          <button>Sign up</button>
         </Link>
       </div>
     </form>
