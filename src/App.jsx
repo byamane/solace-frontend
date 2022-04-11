@@ -5,12 +5,13 @@ import Signup from './pages/Signup/Signup'
 import Landing from './pages/Landing/Landing'
 import Profiles from './pages/Profiles/Profiles'
 import Home from './pages/Home/Home'
+import SleepList from './pages/SleepList/SleepList'
 import * as authService from './services/authService'
 
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
+  const [sleepLogs, setSleepLogs] = useState([])
   const navigate = useNavigate()
-  console.log(user)
 
   const handleLogout = () => {
     authService.logout()
@@ -24,7 +25,6 @@ const App = () => {
 
   return (
     <>
-      {/* <NavBar user={user} handleLogout={handleLogout} /> */}
       <Routes>
         <Route 
           path="/" 
@@ -40,6 +40,15 @@ const App = () => {
             <Home 
               user={user}
               handleLogout={handleLogout}
+            />
+          }
+        />
+        <Route 
+          path='/sleep'
+          element={
+            <SleepList
+              user={user}
+              sleepLogs={sleepLogs}
             />
           }
         />
