@@ -4,24 +4,22 @@ import './NavBarBot.css'
 const NavBarBot = (props) => {
   return (
     <>
-      <nav id='nav-bar-bottom' className="navbar fixed-bottom navbar-light bg-light">
-        <div className="container-fluid">
-          <Link to='/home'>
+      <nav className="navbar-bottom">
+          <Link to='/home' className="navbar-links">
             <i className='material-icons bot-nav-icon'>home</i>
           </Link>
-          <Link to='/sleep'>
+          <Link to='/sleep' className="navbar-links">
             <i className='material-icons bot-nav-icon'>bedtime</i>
           </Link>
-          <Link to='/journal'>
+          <Link to='/journal' className="navbar-links">
             <i className='material-icons bot-nav-icon dropup-toggle'>menu_book</i>
           </Link>
-          <Link to='/meditation'>
+          <Link to='/meditation' className="navbar-links">
             <i className='material-icons bot-nav-icon'>self_improvement</i>
           </Link>
-          <Link to='/'>
+          <Link to='/' className="navbar-links">
             <i onClick={props.handleLogout} className='material-icons bot-nav-icon'>logout</i>
           </Link>
-        </div>
       </nav>
     </>
   )
