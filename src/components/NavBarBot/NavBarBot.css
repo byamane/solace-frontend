@@ -1,11 +1,12 @@
 .bot-nav-icon {
-  color: #1c658c;
+  color: #a062c4;
   font-size: 30px;
+  margin: 0 5px;
 }
 
 nav.navbar.fixed-bottom.navbar-light.bg-light {
-  background-color: #EEEEEE !important;
-  border-top: 1px solid gray;
+  background-color: #3f0259 !important;
+  border-top: 1px solid rgb(61, 0, 107);
 }
 
 #nav-bar-bottom {

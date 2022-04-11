@@ -1,3 +1,5 @@
+import NavBarBot from "../../components/NavBarBot/NavBarBot";
+
 const Home = (props) => {
   console.log(props)
   return (  
@@ -10,6 +12,7 @@ const Home = (props) => {
         </button>
         {/* <a href="/">GO BACK</a> */}
       </div>
+      <NavBarBot></NavBarBot>
     </>
   );
 }
