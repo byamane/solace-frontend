@@ -14,7 +14,7 @@ const Landing = ({ user, handleSignupOrLogin }) => {
   return (
     <>
       <main className='container'>
-        <h1>hello, {user ? user.name : 'friend'}</h1>
+        <h1>Solace</h1>
       </main>
       <LoginForm 
         handleSignupOrLogin={handleSignupOrLogin}

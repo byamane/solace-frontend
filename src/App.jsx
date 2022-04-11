@@ -39,6 +39,7 @@ const App = () => {
           element={
             <Home 
               user={user}
+              handleLogout={handleLogout}
             />
           }
         />
