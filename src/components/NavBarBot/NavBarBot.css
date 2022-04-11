@@ -1,15 +1,25 @@
-.bot-nav-icon {
+.material-icons {
   color: #a062c4;
-  font-size: 30px;
-  margin: 0 5px;
+  font-size: 40px;
 }
 
-nav.navbar.fixed-bottom.navbar-light.bg-light {
+.material-icons:hover {
+  cursor: pointer;
+  background-color: #861dc3;
+}
+
+.navbar-links {
+  margin: 0 auto;
+  margin-top: 3px;
+}
+
+.navbar-bottom {
   background-color: #3f0259 !important;
-  border-top: 1px solid rgb(61, 0, 107);
-}
-
-#nav-bar-bottom {
-  position: sticky;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgb(37, 2, 63);
+  position: fixed;
   bottom: 0;
 }
