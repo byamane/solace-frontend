@@ -1,0 +1,21 @@
+.hp-header {
+  text-shadow: -1px 0 black, 0 0 black, 0 0 black, 0 0 black;
+}
+
+.hp-welcome {
+  font-style: italic;
+  text-shadow: -1px 0 black, 0 0 black, 0 0 black, 0 0 black;
+}
+
+.hp-message {
+  margin: 0 20px;
+  margin-top: 100px;
+  font-size: 1.2rem;
+  text-shadow: -1px 0 black, 0 0 black, 0 0 black, 0 0 black;
+}
+
+.hp-footer {
+  margin-top: 170px;
+  font-style: italic;
+  text-shadow: -1px 0 black, 0 0 black, 0 0 black, 0 0 black;
+}
