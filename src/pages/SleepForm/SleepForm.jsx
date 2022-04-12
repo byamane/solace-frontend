@@ -23,6 +23,7 @@ const SleepForm = (props) => {
   useEffect(() => {
     const fetchOne = async () => {
       const data = await getOne(id)
+      console.log('sleep form data', data)
       setForm({
         id: data.sleep.id,
         name: data.sleep.name,
@@ -36,7 +37,11 @@ const SleepForm = (props) => {
 
   return (  
     <>
-      <h1>Add Sleep</h1>
+      {id ? 
+        <h1>Edit Sleep</h1>
+      :
+        <h1>Add Sleep</h1>
+      }
       <form onSubmit={handleSubmit}>
         <SleepInput 
           form={form}
