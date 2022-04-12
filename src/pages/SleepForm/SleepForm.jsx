@@ -13,6 +13,7 @@ const SleepForm = (props) => {
     e.preventDefault()
     id ? props.updateSleep(form) : props.addSleep(form)
     navigate(`/sleep`)
+    // console.log(form)
   }
 
   const handleChange = (e) => {
@@ -46,7 +47,7 @@ const SleepForm = (props) => {
             type="submit"
             id="add-sleep-btn"
           >
-            Add
+            Submit
           </button>
         </div>
       </form>

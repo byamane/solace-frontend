@@ -1,5 +1,5 @@
 import * as tokenService from './tokenService'
-const BASE_URL = `${process.env.REACT_APP_API_URL}/sleep/`
+const BASE_URL = `${process.env.REACT_APP_API_URL}/api/sleep/`
 
 export const create = async (sleep) => {
   try {

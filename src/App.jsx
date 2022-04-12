@@ -1,8 +1,7 @@
 import { useState } from 'react'
-import { Routes, Route, useNavigate, Navigate } from 'react-router-dom'
+import { Routes, Route, useNavigate } from 'react-router-dom'
 import Signup from './pages/Signup/Signup'
 import Landing from './pages/Landing/Landing'
-import Profiles from './pages/Profiles/Profiles'
 import Home from './pages/Home/Home'
 import SleepList from './pages/SleepList/SleepList'
 import SleepForm from './pages/SleepForm/SleepForm'
@@ -12,7 +11,7 @@ import * as sleepService from './services/sleepService'
 
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
-  const [sleepLogs, setSleepLogs] = useState(['sleep', 'sleep2', 'sleep3'])
+  const [sleepLogs, setSleepLogs] = useState([])
   const navigate = useNavigate()
 
   const addSleep = async (sleepData) => {
@@ -26,8 +25,6 @@ const App = () => {
       sleep.id === updatedSleep.id ? updatedSleep : sleep
     )))
   }
-
-  
 
   const handleLogout = () => {
     authService.logout()
@@ -84,10 +81,6 @@ const App = () => {
         <Route
           path="/signup"
           element={<Signup handleSignupOrLogin={handleSignupOrLogin} />}
-        />
-        <Route
-          path="/profiles"
-          element={user ? <Profiles /> : <Navigate to="/login" />}
         />
       </Routes>
     </>
