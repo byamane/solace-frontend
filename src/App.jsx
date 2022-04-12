@@ -1,18 +1,31 @@
 import { useState } from 'react'
 import { Routes, Route, useNavigate, Navigate } from 'react-router-dom'
-import NavBar from './components/NavBar/NavBar'
 import Signup from './pages/Signup/Signup'
 import Landing from './pages/Landing/Landing'
 import Profiles from './pages/Profiles/Profiles'
 import Home from './pages/Home/Home'
 import SleepList from './pages/SleepList/SleepList'
-import AddSleep from './pages/AddSleep/AddSleep'
+import SleepForm from './pages/SleepForm/SleepForm'
+import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
 import * as authService from './services/authService'
+import * as sleepService from './services/sleepService'
 
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
   const [sleepLogs, setSleepLogs] = useState(['sleep', 'sleep2', 'sleep3'])
   const navigate = useNavigate()
+
+  const addSleep = async (sleepData) => {
+    const sleep = await sleepService.create(sleepData)
+    setSleepLogs([...sleepLogs, sleep])
+  }
+
+  const updateSleep = async (sleepData) => {
+    const updatedSleep = await sleepService.update(sleepData)
+    setSleepLogs(sleepLogs.map((sleep) => (
+      sleep.id === updatedSleep.id ? updatedSleep : sleep
+    )))
+  }
 
   
 
@@ -49,18 +62,23 @@ const App = () => {
         <Route 
           path='/sleep'
           element={
-            <SleepList
-              user={user}
-              sleepLogs={sleepLogs}
-            />
+            <ProtectedRoute user={user}>
+              <SleepList
+                user={user}
+                sleepLogs={sleepLogs}
+              />
+            </ProtectedRoute>
           }
         />
         <Route 
           path='/sleep/new'
           element={
-            <AddSleep 
-              user={user}
-            />
+            <ProtectedRoute user={user}>
+              <SleepForm 
+                user={user}
+                addSleep={addSleep}
+              />
+            </ProtectedRoute>
           }
         />
         <Route
