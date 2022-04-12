@@ -20,7 +20,14 @@ export const create = async (sleep) => {
 
 export const getAll = async () => {
   try {
-    const res = await fetch(`${BASE_URL}`)
+    const res = await fetch(`${BASE_URL}`, {
+      // method: 'GET',
+      headers: {
+        'content-type': 'application/json',
+        'Authorization': `Bearer ${tokenService.getToken()}`
+      }
+    })
+    // console.log(`${BASE_URL}`)
     return await res.json()
   } catch(error) {
     throw error
