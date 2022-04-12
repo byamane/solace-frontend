@@ -5,6 +5,7 @@ import Landing from './pages/Landing/Landing'
 import Home from './pages/Home/Home'
 import SleepList from './pages/SleepList/SleepList'
 import SleepForm from './pages/SleepForm/SleepForm'
+import SleepDetails from './pages/SleepDetails/SleepDetails'
 import JournalList from './pages/JournalList/JournalList'
 import JournalForm from './pages/JournalForm/JournalForm'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
@@ -110,6 +111,17 @@ const App = () => {
               <SleepForm 
                 user={user}
                 addSleep={addSleep}
+              />
+            </ProtectedRoute>
+          }
+        />
+        <Route 
+          path='/sleep/:id'
+          element={
+            <ProtectedRoute user={user}>
+              <SleepDetails 
+                user={user}
+
               />
             </ProtectedRoute>
           }
