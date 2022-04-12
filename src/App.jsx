@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useState, useEffect } from 'react'
 import { Routes, Route, useNavigate } from 'react-router-dom'
 import Signup from './pages/Signup/Signup'
 import Landing from './pages/Landing/Landing'
@@ -35,6 +35,19 @@ const App = () => {
   const handleSignupOrLogin = () => {
     setUser(authService.getUser())
   }
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await sleepService.getAll()
+      console.log(data)
+      data.forEach(sleep => {
+        if (user.id === sleep.profile_id) {
+          setSleepLogs([sleep, ...sleepLogs])
+        }
+      })
+    }
+    fetchData()
+  }, [])
 
   return (
     <>
