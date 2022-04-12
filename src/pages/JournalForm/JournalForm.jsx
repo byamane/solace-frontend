@@ -20,7 +20,11 @@ const JournalForm = (props) => {
   
   return (
     <>
-      <h1>Add Journal</h1>
+      {id ?
+        <h1>Edit Journal</h1>
+      :
+        <h1>Add Journal</h1>
+      }
       <form onSubmit={handleSubmit}>
         <JournalInput 
           form={form}

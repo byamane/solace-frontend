@@ -7,6 +7,7 @@ import SleepList from './pages/SleepList/SleepList'
 import SleepForm from './pages/SleepForm/SleepForm'
 import JournalList from './pages/JournalList/JournalList'
 import JournalForm from './pages/JournalForm/JournalForm'
+import JournalDetails from './pages/JournalDetails/JournalDetails'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
 import * as authService from './services/authService'
 import * as sleepService from './services/sleepService'
@@ -33,6 +34,13 @@ const App = () => {
   const addJournal = async (journalData) => {
     const journal =  await journalService.create(journalData)
     setJournalEntries([...journalEntries, journal])
+  }
+
+  const updateJournal = async (journalData) => {
+    const updatedJournal = await journalService.update(journalData)
+    setJournalEntries(journalEntries.map((journal) => (
+      journal.id === updatedJournal.id ? updatedJournal : journal
+    )))
   }
 
   const handleLogout = () => {
@@ -124,6 +132,27 @@ const App = () => {
               <JournalForm 
                 user={user}
                 addJournal={addJournal}
+              />
+            </ProtectedRoute>
+          }
+        />
+        <Route 
+          path='/journal/:id'
+          element={
+            <ProtectedRoute user={user}>
+              <JournalDetails 
+                user={user}
+              />
+            </ProtectedRoute>
+          }
+        />
+        <Route 
+          path='/journal/:id/edit'
+          element={
+            <ProtectedRoute user={user}>
+              <JournalForm 
+                user={user}
+                updateJournal={updateJournal}
               />
             </ProtectedRoute>
           }
