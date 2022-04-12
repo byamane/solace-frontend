@@ -14,20 +14,20 @@ const JournalInput = (props) => {
       <div id="add-sleep-rating-container">
         <label htmlFor="add-journal-mood">Mood: </label>
         <select 
-          name="rating" 
+          name="mood" 
           id="add-journal-mood" 
           onChange={props.handleChange}
         >
-          <option value={1}>I've had better days</option>
-          <option value={2}>A little rough</option>
-          <option value={3}>Okay</option>
-          <option value={4}>Kinda nice</option>
-          <option value={5}>Amazing!</option>
+          <option value={1}>🥺</option>
+          <option value={2}>😐</option>
+          <option value={3}>🙂</option>
+          <option value={4}>😄</option>
+          <option value={5}>🤩</option>
         </select>
       </div>
       <br />
       <div id="add-sleep-notes-container">
-        <label htmlFor="add-journal-section">Notes: </label>
+        <label htmlFor="add-journal-section">What's on your mind?</label>
         <br />
         <textarea 
           name="journal-section" 
