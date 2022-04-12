@@ -5,13 +5,16 @@ import Landing from './pages/Landing/Landing'
 import Home from './pages/Home/Home'
 import SleepList from './pages/SleepList/SleepList'
 import SleepForm from './pages/SleepForm/SleepForm'
+import JournalList from './pages/JournalList/JournalList'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
 import * as authService from './services/authService'
 import * as sleepService from './services/sleepService'
+import * as journalService from './services/journalService'
 
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
   const [sleepLogs, setSleepLogs] = useState([])
+  const [journalEntries, setJournalEntries] = useState([])
   const navigate = useNavigate()
 
   const addSleep = async (sleepData) => {
@@ -25,6 +28,11 @@ const App = () => {
       sleep.id === updatedSleep.id ? updatedSleep : sleep
     )))
   }
+
+  // const addJournal = async (journalData) => {
+  //   const journal =  await journalService.create(journalData)
+  //   setJournalEntries([...journalEntries, journal])
+  // }
 
   const handleLogout = () => {
     authService.logout()
@@ -43,6 +51,19 @@ const App = () => {
       data.forEach(sleep => {
         if (user.id === sleep.profile_id) {
           setSleepLogs([sleep, ...sleepLogs])
+        }
+      })
+    }
+    fetchData()
+  }, [])
+
+  useEffect(() => {
+    const fetchData = async () => {
+      const data = await journalService.getAll()
+      console.log(data)
+      data.forEach(journal => {
+        if (user.id === journal.profile_id) {
+          setJournalEntries([journal, ...journalEntries])
         }
       })
     }
@@ -94,6 +115,17 @@ const App = () => {
         <Route
           path="/signup"
           element={<Signup handleSignupOrLogin={handleSignupOrLogin} />}
+        />
+        <Route 
+          path='/journal'
+          element={
+            <ProtectedRoute user={user}>
+              <JournalList
+                user={user}
+                journalEntries={journalEntries}
+                />
+            </ProtectedRoute>
+          }
         />
       </Routes>
     </>
