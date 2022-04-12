@@ -1,3 +1,4 @@
+import './SleepList.css'
 import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import SleepCard from "../../components/SleepCard/SleepCard"
 import { Link } from 'react-router-dom'
@@ -18,9 +19,9 @@ const SleepList = (props) => {
   
   return (  
     <>
-      <h1>Sleep List!</h1>
+      <h1 id="sleep-logs-title">Sleep Logs!</h1>
       <Link to='/sleep/new'>
-        <button>
+        <button id='add-sleep-btn-sleep-list'>
           Add Sleep
         </button>
       </Link>

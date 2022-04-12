@@ -1,0 +1,26 @@
+#sleep-card {
+  background-color: lightgray;
+  width: 80vw;
+  height: 20vh;
+  margin: 0 auto;
+  color: black;
+  font-size: 1.4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#sleep-card:last-of-type {
+  margin-bottom: 80px;
+}
+
+#sleep-card-title h5 {
+  color: red;
+  margin: 0;
+}
+
+#sleep-card-date-rating p {
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+}
