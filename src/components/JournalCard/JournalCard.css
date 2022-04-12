@@ -1,0 +1,6 @@
+.journal-card {
+  width: 200px;
+  display: flex;
+  justify-content: center;
+  background-color: antiquewhite;
+}

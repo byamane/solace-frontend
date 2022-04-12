@@ -12,7 +12,7 @@ const JournalList = (props) => {
         </button>
       </Link>
       {props.journalEntries.length ? 
-        <div>
+        <div id="journal-card-container">
           {props.journalEntries.map((journal, idx) => 
             <JournalCard key={idx} journal={journal}/>
           )}

@@ -30,7 +30,7 @@ const JournalInput = (props) => {
         <label htmlFor="add-journal-section">What's on your mind?</label>
         <br />
         <textarea 
-          name="journal-section" 
+          name="journal" 
           id="add-journal-section" 
           cols="40" rows="10" 
           placeholder="Today was really nice. I first woke up and..." 
