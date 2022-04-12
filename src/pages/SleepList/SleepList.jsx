@@ -14,8 +14,8 @@ const SleepList = (props) => {
       </Link>
       {props.sleepLogs.length ? 
         <div>
-          {props.sleepLogs.map((sleep) => 
-            <SleepCard sleep={sleep}/>
+          {props.sleepLogs.map((sleep, idx) => 
+            <SleepCard key={idx} sleep={sleep}/>
           )}
         </div>
       :
