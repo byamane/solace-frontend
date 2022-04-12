@@ -6,7 +6,7 @@ import { useState, useEffect } from 'react';
 import * as sleepService from '../../services/sleepService'
 
 const SleepList = (props) => {
-  console.log('props', props)
+  // console.log('props', props)
 
   useEffect(() => {
     const fetchData = async () => {

@@ -121,7 +121,17 @@ const App = () => {
             <ProtectedRoute user={user}>
               <SleepDetails 
                 user={user}
-
+              />
+            </ProtectedRoute>
+          }
+        />
+        <Route 
+          path='/sleep/:id/edit'
+          element={
+            <ProtectedRoute user={user}>
+              <SleepForm 
+                user={user}
+                updateSleep={updateSleep}
               />
             </ProtectedRoute>
           }

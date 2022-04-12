@@ -1,8 +1,7 @@
 import NavBarBot from "../../components/NavBarBot/NavBarBot";
-import { useLocation } from "react-router-dom";
+import { useLocation, Link } from "react-router-dom";
 import { useState } from 'react';
-import userEvent from "@testing-library/user-event";
-
+import './SleepDetails.css'
 
 const SleepDetails = (props) => {
   const location = useLocation()
@@ -14,18 +13,16 @@ const SleepDetails = (props) => {
   return (  
     <>
       <h1>Sleep Details</h1>
-      {props.user.id === sleep.profile_id ?
-        <div id="sleep-details-btns">
+      <div id="sleep-details-btns">
+        <Link to={`/sleep/${sleep.id}/edit`}>
           <button>
             Edit
           </button>
-          <button>
-            Delete
-          </button>
-        </div>
-      :
-        <></>
-      }
+        </Link>
+        <button>
+          Delete
+        </button>
+      </div>
       <div>
         <div id="sleep-details-title">
           <h3>Title: {sleep.name}</h3>

@@ -2,7 +2,7 @@ import './SleepCard.css'
 import { Link } from 'react-router-dom'
 
 const SleepCard = (props) => {
-  console.log(props)
+  // console.log(props)
   // console.log(props.sleep.created_at)
   const sleepDate = new Date(props.sleep.created_at).toDateString()
   // const sleepDate2 = sleepDate.toDateString()
