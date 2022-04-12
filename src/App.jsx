@@ -58,19 +58,6 @@ const App = () => {
   //   fetchData()
   // }, [])
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const data = await journalService.getAll()
-      console.log(data)
-      data.forEach(journal => {
-        if (user.id === journal.profile_id) {
-          setJournalEntries([journal, ...journalEntries])
-        }
-      })
-    }
-    fetchData()
-  }, [])
-
   return (
     <>
       <Routes>
@@ -125,6 +112,7 @@ const App = () => {
               <JournalList
                 user={user}
                 journalEntries={journalEntries}
+                setJournalEntries={setJournalEntries}
                 />
             </ProtectedRoute>
           }
