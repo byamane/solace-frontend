@@ -5,31 +5,25 @@ const Timer = () => {
   const [seconds, setSeconds] = useState(300)
   const [isActive, setIsActive] = useState(false)
   
-  let audio = new Audio(song)
+  // let audio = new Audio(song)
   
   function toggle() {
     setIsActive(!isActive)
-    if (isActive) {
-      audio.play()
-    } else {
-      audio.pause()
-    }
   }
 
   function reset() {
     setSeconds(300)
     setIsActive(false)
-    audio.pause()
-    audio.currentTime = 0
   }
 
   useEffect(() => {
     let interval = null
-    if (isActive) {
+    if (isActive && seconds > 0) {
       interval = setInterval(() => {
         setSeconds(seconds => seconds - 1)
-      }, 1000)
-    } else if (!isActive && seconds !== 300) {
+        console.log(seconds)
+      }, 10)
+    } else if (!isActive && seconds !== 0) {
       clearInterval(interval)
     }
     return () => clearInterval(interval)
@@ -39,7 +33,6 @@ const Timer = () => {
   const secs = seconds % 60
 
   const result = `${minutes.toString().padStart(1, '0')}:${secs.toString().padStart(2, '0')}`
-
 
   return (
     <div className="app">
