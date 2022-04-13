@@ -2,6 +2,7 @@ import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import SleepInput from "../../components/SleepInput/SleepInput";
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from "react-router-dom";
+import './SleepForm.css'
 
 const SleepForm = (props) => {
   const { id } = useParams()
