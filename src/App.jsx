@@ -72,7 +72,12 @@ const App = () => {
   }
 
   return (
-    <div id='app-container'>
+    <div 
+      id='app-container'
+      style={{
+        // backgroundImage: `url(../public/Solace.png)`
+      }}
+    >
       <Routes>
         <Route 
           path="/" 

@@ -6,7 +6,7 @@ const Timer = () => {
   const [isActive, setIsActive] = useState(false)
   
   let audio = new Audio(song)
-
+  
   function toggle() {
     setIsActive(!isActive)
     if (isActive) {
