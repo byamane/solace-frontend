@@ -7,7 +7,7 @@ const SleepDetails = (props) => {
   const location = useLocation()
   console.log(location.state)
   const [sleep, setSleep] = useState(location.state)
-  const sleepDate = new Date(sleep.created_at).toDateString()
+  const sleepDate = new Date(`${sleep.date} EST`).toLocaleDateString()
   // console.log(props)
 
   return (  

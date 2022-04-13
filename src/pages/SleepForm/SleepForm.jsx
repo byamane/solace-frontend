@@ -6,7 +6,7 @@ import { useParams, useNavigate, useLocation } from "react-router-dom";
 const SleepForm = (props) => {
   const { id } = useParams()
   const location = useLocation()
-  // console.log(location.state)
+  console.log(location.state)
   const sleep = location.state
   const navigate = useNavigate()
   const [form, setForm] = useState({})
@@ -30,6 +30,7 @@ const SleepForm = (props) => {
       setForm({
         id: sleep.id,
         name: sleep.name,
+        date: sleep.date,
         rating: sleep.rating,
         notes: sleep.notes
       })

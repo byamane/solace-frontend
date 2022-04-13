@@ -69,19 +69,6 @@ const App = () => {
     setUser(authService.getUser())
   }
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const data = await sleepService.getAll()
-  //     console.log('all', data)
-  //     console.log('1', data[0].profile_id)
-  //     console.log('user', user)
-  //     console.log('user.id', user.id)
-      
-
-  //   }
-  //   fetchData()
-  // }, [])
-
   return (
     <>
       <Routes>
@@ -149,8 +136,11 @@ const App = () => {
         <Route 
           path='/sleep/:id/confirmation'
           element={
-            <ProtectedRoute>
-              
+            <ProtectedRoute user={user}>
+              <Confirmation 
+                user={user}
+                deleteSleep={deleteSleep}
+              />
             </ProtectedRoute>
           }
         />

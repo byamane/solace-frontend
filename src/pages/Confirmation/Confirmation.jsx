@@ -7,20 +7,34 @@ const Confirmation = (props) => {
   const resource = props.deleteJournal ? 'journal' : 'sleep'
 
   const handleDelete = () => {
-    props.deleteJournal && props.deleteJournal(id)
-    // props.deleteSleep && props.deleteSleep(id)
+    props.deleteJournal ? (
+      props.deleteJournal && props.deleteJournal(id)
+    ) : (
+      props.deleteSleep && props.deleteSleep(id)
+    )
     navigate(`/${resource}`)
   }
 
   return (
     <>
       <div className="page-header">
-        <h1>Delete Confirmation</h1>
+        <h2>Delete Confirmation</h2>
       </div>
       <section className="confirmation">
         <h2>Are you sure you want to delete {state?.name}?</h2>
-        <Link className="btn submit" to={`/${resource}/${id}`}>Cancel</Link>
-        <button onClick={handleDelete} type="button" className="btn danger">Yes - Delete!</button>
+        <button 
+          onClick={handleDelete} 
+          type="button" 
+          className="btn danger"
+        >
+          Yes - Delete!
+        </button>
+        <br />
+        <Link className="btn submit" to={`/${resource}/${id}`}>
+          <button>
+            Cancel
+          </button>
+          </Link>
       </section>
     </>
   )

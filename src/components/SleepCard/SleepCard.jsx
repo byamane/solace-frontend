@@ -4,9 +4,11 @@ import { Link } from 'react-router-dom'
 const SleepCard = (props) => {
   // console.log(props)
   // console.log(props.sleep.created_at)
-  const sleepDate = new Date(props.sleep.created_at).toDateString()
+  const sleepDate = new Date(`${props.sleep.date} EST`).toLocaleDateString()
   // const sleepDate2 = sleepDate.toDateString()
   // console.log('sleepdate', sleepDate)
+
+  const imgIdx = Math.floor(Math.random() * (props.sleepImgs.length))
 
   return (  
     <>
@@ -16,7 +18,14 @@ const SleepCard = (props) => {
         style={{textDecoration: 'none'}}
         state={props.sleep}
       >
-        <div id="sleep-card">
+        <div 
+          id="sleep-card" 
+          style={{
+            backgroundImage: `url(${props.sleepImgs[imgIdx]})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+          }}>
+          {/* <img src={`${props.sleepImgs[0]}`} alt="sleep_image" /> */}
           <div id="sleep-card-title">
             <h5>{props.sleep.name}</h5>
           </div>
