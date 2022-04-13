@@ -8,6 +8,8 @@ const SleepCard = (props) => {
   // const sleepDate2 = sleepDate.toDateString()
   // console.log('sleepdate', sleepDate)
 
+  const imgIdx = Math.floor(Math.random() * (props.sleepImgs.length))
+
   return (  
     <>
       {/* <h3>This is sleep card</h3> */}
@@ -16,7 +18,14 @@ const SleepCard = (props) => {
         style={{textDecoration: 'none'}}
         state={props.sleep}
       >
-        <div id="sleep-card">
+        <div 
+          id="sleep-card" 
+          style={{
+            backgroundImage: `url(${props.sleepImgs[imgIdx]})`,
+            backgroundRepeat: 'no-repeat',
+            backgroundSize: 'cover',
+          }}>
+          {/* <img src={`${props.sleepImgs[0]}`} alt="sleep_image" /> */}
           <div id="sleep-card-title">
             <h5>{props.sleep.name}</h5>
           </div>
