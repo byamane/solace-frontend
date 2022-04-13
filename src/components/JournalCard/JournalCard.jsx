@@ -8,15 +8,12 @@ const JournalCard = ({journal}) => {
   return ( 
     <Link 
       to={`/journal/${journal.id}`} 
-      className="card"
+      className="journal-card-container"
       state={journal}
       style={{textDecoration: 'none'}}  
     >
-      <div className="journal-card">
-        {/* <div className="card-img-container">
-          <img className="usr-img" src={journal.mood} alt="Your mood" />
-        </div> */}
-        <h2 className="card-title">{journal.name}</h2>
+      <div id="journal-card">
+        <h2 id="journal-card-title">{journal.name}</h2>
         <p>{journalDate}</p>
       </div>
     </Link>

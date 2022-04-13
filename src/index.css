@@ -18,3 +18,11 @@ code {
 h1 {
   font-size: 80px;
 }
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  text-decoration: none;
+}
