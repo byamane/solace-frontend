@@ -16,7 +16,7 @@ const Home = (props) => {
         <h4 className="hp-footer">Click on one of the icons below to begin</h4>
         {/* <a href="/">GO BACK</a> */}
       </div>
-      <NavBarBot handleLogout={props.handleLogout}></NavBarBot>
+      {/* <NavBarBot handleLogout={props.handleLogout}></NavBarBot> */}
     </>
   );
 }

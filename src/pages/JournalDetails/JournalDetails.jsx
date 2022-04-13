@@ -1,4 +1,4 @@
-import NavBarBot from "../../components/NavBarBot/NavBarBot";
+// import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import { useLocation } from "react-router-dom";
 // import { useState } from 'react';
 import './JournalDetails.css'
@@ -37,7 +37,7 @@ const JournalDetails = (props) => {
           <p>{journal.journal}</p>
         </div>
       </div>
-      <NavBarBot />
+      {/* <NavBarBot /> */}
     </>
    );
 }

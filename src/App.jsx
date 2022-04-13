@@ -13,6 +13,7 @@ import JournalForm from './pages/JournalForm/JournalForm'
 import JournalDetails from './pages/JournalDetails/JournalDetails'
 import Confirmation from './pages/Confirmation/Confirmation'
 import Meditation from './pages/Meditation/Meditation'
+import NavBarBot from './components/NavBarBot/NavBarBot'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
 import './App.css'
 
@@ -92,7 +93,7 @@ const App = () => {
           element={
             <Home 
               user={user}
-              handleLogout={handleLogout}
+              // handleLogout={handleLogout}
             />
           }
         />
@@ -212,6 +213,11 @@ const App = () => {
           } 
         />
       </Routes>
+      {user ? 
+        <NavBarBot handleLogout={handleLogout} />
+      :
+        <></>
+      }
     </div>
   )
 }

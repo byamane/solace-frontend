@@ -1,4 +1,4 @@
-import NavBarBot from "../../components/NavBarBot/NavBarBot";
+// import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import { useLocation, Link } from "react-router-dom";
 // import { useState } from 'react';
 import './SleepDetails.css'
@@ -48,7 +48,7 @@ const SleepDetails = (props) => {
           <p>{sleep.notes}</p>
         </div>
       </div>
-      <NavBarBot />
+      {/* <NavBarBot /> */}
     </>
   );
 }
