@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import song from "../../../assets/meditate.mp3"
+// import song from "../../../assets/meditate.mp3"
 
 const Timer = () => {
   const [seconds, setSeconds] = useState(300)
@@ -21,8 +21,7 @@ const Timer = () => {
     if (isActive && seconds > 0) {
       interval = setInterval(() => {
         setSeconds(seconds => seconds - 1)
-        console.log(seconds)
-      }, 10)
+      }, 1000)
     } else if (!isActive && seconds !== 0) {
       clearInterval(interval)
     }
