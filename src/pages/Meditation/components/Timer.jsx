@@ -1,16 +1,26 @@
 import { useState, useEffect } from 'react'
+import song from "../../../assets/meditate.mp3"
 
 const Timer = () => {
   const [seconds, setSeconds] = useState(300)
   const [isActive, setIsActive] = useState(false)
+  
+  let audio = new Audio(song)
 
   function toggle() {
     setIsActive(!isActive)
+    if (isActive) {
+      audio.play()
+    } else {
+      audio.pause()
+    }
   }
 
   function reset() {
     setSeconds(300)
     setIsActive(false)
+    audio.pause()
+    audio.currentTime = 0
   }
 
   useEffect(() => {
@@ -29,6 +39,7 @@ const Timer = () => {
   const secs = seconds % 60
 
   const result = `${minutes.toString().padStart(1, '0')}:${secs.toString().padStart(2, '0')}`
+
 
   return (
     <div className="app">
