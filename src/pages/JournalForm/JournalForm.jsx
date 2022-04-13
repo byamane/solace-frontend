@@ -26,7 +26,7 @@ const JournalForm = (props) => {
       setForm({
         id: journal.id,
         name: journal.name,
-        date: journal.created_at,
+        date: journal.date,
         mood: journal.mood,
         journal: journal.journal
       })

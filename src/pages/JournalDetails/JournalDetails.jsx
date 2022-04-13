@@ -9,10 +9,10 @@ import JournalActions from "./components/JournalActions";
 const JournalDetails = (props) => {
   
   const location = useLocation()
-  console.log(location.state)
   const [journal, setJournal] = useState(location.state)
-  const journalDate = new Date(journal.created_at).toDateString()
-  console.log(props)
+  const journalDate = new Date(`${journal.date} EST`).toLocaleDateString()
+
+  const emojiIndex = ["🥺", "😐", "🙂", "😄", "🤩"]
   
   return ( 
     <>
@@ -30,7 +30,7 @@ const JournalDetails = (props) => {
           </h3>
         </div>
         <div id="journal-details-rating">
-          <h3>Mood: {journal.mood}</h3>
+          <h3>Mood: {emojiIndex[journal.mood]}</h3>
         </div>
         <div id="journal-details-journal">
           <p>{journal.journal}</p>

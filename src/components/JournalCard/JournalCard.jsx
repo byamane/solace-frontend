@@ -3,7 +3,9 @@ import './JournalCard.css'
 
 const JournalCard = ({journal}) => {
 
-  const journalDate = new Date(journal.created_at).toDateString()
+  const journalDate = new Date(`${journal.date} EST`).toLocaleDateString()
+
+  const emojiIndex = ["🥺", "😐", "🙂", "😄", "🤩"]
 
   return ( 
     <Link 
@@ -14,6 +16,7 @@ const JournalCard = ({journal}) => {
     >
       <div id="journal-card">
         <h2 id="journal-card-title">{journal.name}</h2>
+        <p>{emojiIndex[journal.mood]}</p>
         <p>{journalDate}</p>
       </div>
     </Link>
