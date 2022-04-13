@@ -31,6 +31,11 @@ const App = () => {
     )))
   }
 
+  const deleteSleep = async (id) => {
+    await sleepService.deleteOne(id)
+    setSleepLogs(sleepLogs.filter(sleep => sleep.id !== parseInt(id)))
+  }
+
   const addJournal = async (journalData) => {
     const journal =  await journalService.create(journalData)
     setJournalEntries([...journalEntries, journal])
@@ -120,6 +125,14 @@ const App = () => {
                 user={user}
                 updateSleep={updateSleep}
               />
+            </ProtectedRoute>
+          }
+        />
+        <Route 
+          path='/sleep/:id/confirmation'
+          element={
+            <ProtectedRoute>
+              
             </ProtectedRoute>
           }
         />

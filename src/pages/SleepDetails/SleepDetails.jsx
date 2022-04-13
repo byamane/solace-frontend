@@ -22,9 +22,14 @@ const SleepDetails = (props) => {
             Edit
           </button>
         </Link>
-        <button>
-          Delete
-        </button>
+        <Link
+          to={`/sleep/${sleep.id}/confirmation`}
+          state={sleep}
+        >
+          <button>
+            Delete
+          </button>
+        </Link>
       </div>
       <div>
         <div id="sleep-details-title">
