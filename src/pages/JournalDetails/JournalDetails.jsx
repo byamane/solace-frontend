@@ -3,6 +3,9 @@ import { useLocation, Link } from "react-router-dom";
 import { useState } from 'react';
 import './JournalDetails.css'
 
+// Components
+import JournalActions from "./components/JournalActions";
+
 const JournalDetails = (props) => {
   
   const location = useLocation()
@@ -15,14 +18,7 @@ const JournalDetails = (props) => {
     <>
       <h1>Journal Details</h1>
       <div id="journal-details-btns">
-        <Link to={`/journal/${journal.id}/edit`}>
-          <button>
-            Edit
-          </button>
-        </Link>
-        <button>
-          Delete
-        </button>
+        <JournalActions journal={journal} user={props.user} />
       </div>
       <div>
         <div id="journal-details-title">

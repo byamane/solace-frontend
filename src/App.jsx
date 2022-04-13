@@ -1,5 +1,7 @@
 import { useState, useEffect } from 'react'
 import { Routes, Route, useNavigate } from 'react-router-dom'
+
+// Components
 import Signup from './pages/Signup/Signup'
 import Landing from './pages/Landing/Landing'
 import Home from './pages/Home/Home'
@@ -9,7 +11,10 @@ import SleepDetails from './pages/SleepDetails/SleepDetails'
 import JournalList from './pages/JournalList/JournalList'
 import JournalForm from './pages/JournalForm/JournalForm'
 import JournalDetails from './pages/JournalDetails/JournalDetails'
+import Confirmation from './pages/Confirmation/Confirmation'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
+
+// Services
 import * as authService from './services/authService'
 import * as sleepService from './services/sleepService'
 import * as journalService from './services/journalService'
@@ -42,6 +47,11 @@ const App = () => {
     setJournalEntries(journalEntries.map((journal) => (
       journal.id === updatedJournal.id ? updatedJournal : journal
     )))
+  }
+
+  const deleteJournal = async (id) => {
+    await journalService.deleteOne(id)
+    setJournalEntries(journalEntries.filter(journal => journal.id !== parseInt(id)))
   }
 
   const handleLogout = () => {
@@ -179,6 +189,11 @@ const App = () => {
             </ProtectedRoute>
           }
         />
+        <Route path="/journal/:id/confirmation" element={
+            <ProtectedRoute user={user}>
+              <Confirmation deleteJournal={deleteJournal} user={user} />
+            </ProtectedRoute>
+          } />
       </Routes>
     </>
   )
