@@ -1,6 +1,29 @@
-.journal-card {
-  width: 200px;
+#journal-card {
+  background-color: lightgray;
+  border-radius: 10px;
+  width: 80vw;
+  height: 25vh;
+  margin: 0 auto;
+  margin-bottom: 40px;
+  color: black;
+  font-size: 1.4rem;
   display: flex;
-  justify-content: center;
-  background-color: antiquewhite;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+#journal-card-title h5 {
+  color: red;
+  margin: 0;
+}
+
+#journal-card-date-rating p {
+  background-color: #E0E2DB;
+  /* color: white; */
+  margin: 0;
+  padding: 0 10px;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  display: flex;
+  justify-content: space-between;
 }
