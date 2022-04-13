@@ -31,6 +31,7 @@ const JournalForm = (props) => {
         journal: journal.journal
       })
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   
   return (

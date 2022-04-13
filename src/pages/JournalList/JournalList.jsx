@@ -15,6 +15,7 @@ const JournalList = (props) => {
       props.setJournalEntries(data)
     }
     fetchData()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   
   return (  

@@ -36,6 +36,7 @@ const SleepForm = (props) => {
         notes: sleep.notes
       })
     }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
 
   return (  
