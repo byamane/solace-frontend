@@ -1,5 +1,8 @@
 .hp-header {
   text-shadow: -1px 0 black, 0 0 black, 0 0 black, 0 0 black;
+  /* margin: 0 auto; */
+  /* margin-top: 20px; */
+  /* padding-top: 20px; */
 }
 
 .hp-welcome {
@@ -9,13 +12,18 @@
 
 .hp-message {
   margin: 0 20px;
-  margin-top: 100px;
+  /* margin-top: 100px; */
+  /* position: absolute; */
+
   font-size: 1.2rem;
   text-shadow: -1px 0 black, 0 0 black, 0 0 black, 0 0 black;
 }
 
 .hp-footer {
-  margin-top: 170px;
   font-style: italic;
   text-shadow: -1px 0 black, 0 0 black, 0 0 black, 0 0 black;
+  position: absolute;
+  bottom: 5%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

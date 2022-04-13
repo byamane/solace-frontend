@@ -10,5 +10,7 @@
 }
 
 #sleep-card-sleep-list:last-of-type {
-  margin-bottom: 90px;
+  /* margin-bottom: 90px; */
+  /* border-bottom: 40px; */
+  /* padding-bottom: 60px; */
 }

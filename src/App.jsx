@@ -13,6 +13,7 @@ import JournalForm from './pages/JournalForm/JournalForm'
 import JournalDetails from './pages/JournalDetails/JournalDetails'
 import Confirmation from './pages/Confirmation/Confirmation'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
+import './App.css'
 
 // Services
 import * as authService from './services/authService'
@@ -70,7 +71,7 @@ const App = () => {
   }
 
   return (
-    <>
+    <div id='app-container'>
       <Routes>
         <Route 
           path="/" 
@@ -198,7 +199,7 @@ const App = () => {
             </ProtectedRoute>
           } />
       </Routes>
-    </>
+    </div>
   )
 }
 

@@ -5,8 +5,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
-  background-image: url("../public/Solace.png");
-  background-size: cover;
+  /* background-image: url("../public/Solace.png");
+  background-size: cover; */
   color: white;
 }
 
@@ -15,6 +15,6 @@ code {
     monospace;
 }
 
-h1 {
-  font-size: 80px;
-}
+/* h1 {
+  font-size: 5.5rem;
+} */
