@@ -11,7 +11,24 @@ const SleepInput = (props) => {
           onChange={props.handleChange}
           required
           value={form.name ? form.name : ''}
-        ></input>
+        />
+      </div>
+      <br />
+      <div>
+        <label htmlFor="">Date: </label>
+        <input 
+          type="date"
+          name="date"
+          id="add-sleep-date"
+          onChange={props.handleChange}
+          pattern="\d{2}-\d{2}-\d{4}"
+          value={form.date ? 
+            new Date(form.date).toISOString().substring(0,10) 
+            : 
+            new Date().toISOString().substring(0,10)
+          }
+        />
+        {/* {console.log(new Date().toISOString().substring(0,10))} */}
       </div>
       <br />
       <div id="add-sleep-rating-container">
