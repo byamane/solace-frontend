@@ -31,7 +31,7 @@
 #app-container {
   /* background-color: blue; */
   min-height: 100vh;
-  background-image: url("../public/Solace.png");
+  background-image: url("../src/assets/Solace.png");
   background-size: cover;
   padding: 20px 0;
   padding-bottom: 40px;

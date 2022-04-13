@@ -1,12 +1,14 @@
 import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import { useLocation, Link } from "react-router-dom";
-import { useState } from 'react';
+// import { useState } from 'react';
 import './SleepDetails.css'
 
 const SleepDetails = (props) => {
   const location = useLocation()
   console.log(location.state)
-  const sleep = useState(location.state)
+  // const [sleep, setSleep] = useState(location.state)
+  const sleep = location.state
+  console.log(sleep)
   const sleepDate = new Date(`${sleep.date} EST`).toLocaleDateString()
   // console.log(props)
 
