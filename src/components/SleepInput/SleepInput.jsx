@@ -1,4 +1,5 @@
 const SleepInput = (props) => {
+  const form = props.form
   return (  
     <>
       <div id="add-sleep-title-container">
@@ -8,7 +9,9 @@ const SleepInput = (props) => {
           id="add-sleep-title" 
           placeholder="Enter Title" 
           onChange={props.handleChange}
-          required></input>
+          required
+          value={form.name ? form.name : ''}
+        ></input>
       </div>
       <br />
       <div id="add-sleep-rating-container">
@@ -17,6 +20,7 @@ const SleepInput = (props) => {
           name="rating" 
           id="add-sleep-rating" 
           onChange={props.handleChange}
+          value={form.rating ? form.rating : 1}
         >
           <option value={1}>1</option>
           <option value={2}>2</option>
@@ -35,7 +39,9 @@ const SleepInput = (props) => {
           cols="30" rows="10" 
           placeholder="Ex: I slept wonderfully. I slept for 12hrs. etc..." 
           onChange={props.handleChange}
-          required>
+          required
+          value={form.notes ? form.notes : ''}
+        >
         </textarea>
       </div>
     </>

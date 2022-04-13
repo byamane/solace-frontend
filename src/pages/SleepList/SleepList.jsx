@@ -12,7 +12,7 @@ const SleepList = (props) => {
     const fetchData = async () => {
       const data = await sleepService.getAll()
       console.log('data', data)
-      props.setSleepLogs(data)
+      props.setSleepLogs(data.reverse())
     }
     fetchData()
   }, [])
