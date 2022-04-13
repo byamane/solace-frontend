@@ -21,7 +21,7 @@ const App = () => {
 
   const addSleep = async (sleepData) => {
     const sleep = await sleepService.create(sleepData)
-    setSleepLogs([...sleepLogs, sleep])
+    setSleepLogs([sleep, ...sleepLogs])
   }
 
   const updateSleep = async (sleepData) => {

@@ -8,13 +8,16 @@ const SleepDetails = (props) => {
   console.log(location.state)
   const [sleep, setSleep] = useState(location.state)
   const sleepDate = new Date(sleep.created_at).toDateString()
-  console.log(props)
+  // console.log(props)
 
   return (  
     <>
       <h1>Sleep Details</h1>
       <div id="sleep-details-btns">
-        <Link to={`/sleep/${sleep.id}/edit`}>
+        <Link 
+          to={`/sleep/${sleep.id}/edit`}
+          state={sleep}
+        >
           <button>
             Edit
           </button>

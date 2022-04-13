@@ -1,18 +1,23 @@
 import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import SleepInput from "../../components/SleepInput/SleepInput";
 import { useState, useEffect } from 'react';
-import { useParams, useNavigate } from "react-router-dom";
-import { getOne } from "../../services/sleepService";
+import { useParams, useNavigate, useLocation } from "react-router-dom";
 
 const SleepForm = (props) => {
   const { id } = useParams()
+  const location = useLocation()
+  // console.log(location.state)
+  const sleep = location.state
   const navigate = useNavigate()
   const [form, setForm] = useState({})
+  // console.log(props)
 
   const handleSubmit = async (e) => {
     e.preventDefault()
+    console.log('this is a form test', form)
     id ? props.updateSleep(form) : props.addSleep(form)
-    navigate(`/sleep`)
+    id ? navigate(`/sleep/${id}`, {state: form}) : navigate('/sleep')
+    // navigate(`/sleep`)
     // console.log(form)
   }
 
@@ -21,19 +26,15 @@ const SleepForm = (props) => {
   }
 
   useEffect(() => {
-    const fetchOne = async () => {
-      const data = await getOne(id)
-      console.log('sleep form data', data)
+    if (id) {
       setForm({
-        id: data.sleep.id,
-        name: data.sleep.name,
-        rating: data.sleep.rating,
-        notes: data.sleep.notes,
+        id: sleep.id,
+        name: sleep.name,
+        rating: sleep.rating,
+        notes: sleep.notes
       })
     }
-    id && fetchOne()
-    return () => setForm({})
-  }, [id])
+  }, [])
 
   return (  
     <>
@@ -52,7 +53,11 @@ const SleepForm = (props) => {
             type="submit"
             id="add-sleep-btn"
           >
-            Submit
+            {id ? 
+              'Update'
+            :
+              'Add'
+            }
           </button>
         </div>
       </form>
