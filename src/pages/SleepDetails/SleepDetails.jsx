@@ -33,20 +33,23 @@ const SleepDetails = (props) => {
           </button>
         </Link>
       </div>
-      <div id="sleep-details-container">
-        <div id="sleep-details-title">
-          <h3>{sleep.name}</h3>
+      <div id="sleep-details-div">
+        <div id="sleep-details-container">
+          <div id="sleep-details-title">
+            <h3>{sleep.name}</h3>
+          </div>
+          <div>
+            <h3>Date: {sleepDate}</h3>
+          </div>
+          <div id="sleep-details-rating">
+            <h3>Rating: {sleep.rating}</h3>
+          </div>
+          <div id="sleep-details-notes">
+            <h3>Notes: </h3>
+            <p>{sleep.notes}</p>
+          </div>
         </div>
-        <div>
-          <h3>Date: {sleepDate}</h3>
-        </div>
-        <div id="sleep-details-rating">
-          <h3>Rating: {sleep.rating}</h3>
-        </div>
-        <div id="sleep-details-notes">
-          <h3>Notes: </h3>
-          <p>{sleep.notes}</p>
-        </div>
+
       </div>
       {/* <NavBarBot /> */}
     </>

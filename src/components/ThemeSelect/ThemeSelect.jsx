@@ -4,7 +4,7 @@ const ThemeSelect = (props) => {
   return (  
     <>
       <div>
-        <h3>Select a Theme</h3>
+
       </div>
     </>
   );

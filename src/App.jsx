@@ -22,6 +22,15 @@ import * as authService from './services/authService'
 import * as sleepService from './services/sleepService'
 import * as journalService from './services/journalService'
 
+import bg0 from '../src/assets/solacebg0.png'
+import bg1 from '../src/assets/solacebg1.jpeg'
+import bg2 from '../src/assets/solacebg2.jpeg'
+import bg3 from '../src/assets/solacebg3.jpeg'
+import bg4 from '../src/assets/solacebg4.jpeg'
+import bg5 from '../src/assets/solacebg5.jpeg'
+import bg6 from '../src/assets/solacebg6.jpeg'
+import bg7 from '../src/assets/solacebg7.jpeg'
+
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
   const [sleepLogs, setSleepLogs] = useState([])
@@ -72,11 +81,13 @@ const App = () => {
     setUser(authService.getUser())
   }
 
+  const bgImg = [bg0, bg1, bg2, bg3, bg4, bg5, bg6, bg7]
+
   return (
     <div 
       id='app-container'
       style={{
-        // backgroundImage: `url(../public/Solace.png)`
+        backgroundImage: `url(${bg0})`
       }}
     >
       <Routes>
@@ -93,6 +104,7 @@ const App = () => {
           element={
             <Home 
               user={user}
+              bgImg={bgImg}
               // handleLogout={handleLogout}
             />
           }

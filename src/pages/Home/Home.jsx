@@ -1,4 +1,4 @@
-import NavBarBot from "../../components/NavBarBot/NavBarBot";
+// import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import "./Home.css"
 import ThemeSelect from "../../components/ThemeSelect/ThemeSelect";
 
@@ -11,6 +11,7 @@ const Home = (props) => {
         <h4 className="hp-welcome">Welcome, {props.user.name}</h4>
         <h4 className="hp-message">Log your nightly sleep, reflect on your day in your journal, and practice mindfulness through meditation</h4>
         <div id="theme-select-container">
+          <h3>Select a Theme</h3>
           <ThemeSelect />
         </div>
         <h4 className="hp-footer">Click on one of the icons below to begin</h4>
