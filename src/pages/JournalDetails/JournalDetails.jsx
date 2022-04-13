@@ -1,5 +1,5 @@
 import NavBarBot from "../../components/NavBarBot/NavBarBot";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useState } from 'react';
 import './JournalDetails.css'
 
@@ -9,10 +9,10 @@ import JournalActions from "./components/JournalActions";
 const JournalDetails = (props) => {
   
   const location = useLocation()
-  console.log(location.state)
-  const [journal, setJournal] = useState(location.state)
-  // const journalDate = new Date(journal.created_at).toDateString()
-  console.log(props)
+  const journal = useState(location.state)
+  const journalDate = new Date(`${journal.date} EST`).toLocaleDateString()
+
+  const emojiIndex = ["🥺", "😐", "🙂", "😄", "🤩"]
   
   return ( 
     <>
@@ -24,13 +24,13 @@ const JournalDetails = (props) => {
         <div id="journal-details-title">
           <h3>Title: {journal.name}</h3>
         </div>
-        {/* <div>
+        <div>
           <h3>
             Date: {journalDate}
           </h3>
-        </div> */}
+        </div>
         <div id="journal-details-rating">
-          <h3>Mood: {journal.mood}</h3>
+          <h3>Mood: {emojiIndex[journal.mood]}</h3>
         </div>
         <div id="journal-details-journal">
           <p>{journal.journal}</p>

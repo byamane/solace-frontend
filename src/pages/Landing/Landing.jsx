@@ -16,6 +16,7 @@ const Landing = ({ user, handleSignupOrLogin }) => {
       <main className='container'>
         <h1>Solace</h1>
       </main>
+      <p>{message}</p>
       <LoginForm 
         handleSignupOrLogin={handleSignupOrLogin}
         updateMessage={updateMessage}

@@ -3,20 +3,20 @@ import './JournalCard.css'
 
 const JournalCard = ({journal}) => {
 
-  const journalDate = new Date(journal.created_at).toDateString()
+  const journalDate = new Date(`${journal.date} EST`).toLocaleDateString()
+
+  const emojiIndex = ["🥺", "😐", "🙂", "😄", "🤩"]
 
   return ( 
     <Link 
       to={`/journal/${journal.id}`} 
-      className="card"
+      className="journal-card-container"
       state={journal}
       style={{textDecoration: 'none'}}  
     >
-      <div className="journal-card">
-        {/* <div className="card-img-container">
-          <img className="usr-img" src={journal.mood} alt="Your mood" />
-        </div> */}
-        <h2 className="card-title">{journal.name}</h2>
+      <div id="journal-card">
+        <h2 id="journal-card-title">{journal.name}</h2>
+        <p>{emojiIndex[journal.mood]}</p>
         <p>{journalDate}</p>
       </div>
     </Link>

@@ -1,4 +1,5 @@
 const JournalInput = (props) => {
+  const form = props.form
   return ( 
     <>
       <div id="add-sleep-title-container">
@@ -8,7 +9,9 @@ const JournalInput = (props) => {
           id="add-journal-title" 
           placeholder="Title of Your Day" 
           onChange={props.handleChange}
-          required></input>
+          required
+          value={form.name ? form.name : ''}  
+        />
       </div>
       <br />
       <div id="add-sleep-rating-container">
@@ -17,12 +20,13 @@ const JournalInput = (props) => {
           name="mood" 
           id="add-journal-mood" 
           onChange={props.handleChange}
+          value={form.mood ? form.mood : 2}
         >
-          <option value={1}>🥺</option>
-          <option value={2}>😐</option>
-          <option value={3}>🙂</option>
-          <option value={4}>😄</option>
-          <option value={5}>🤩</option>
+          <option value={0}>🥺</option>
+          <option value={1}>😐</option>
+          <option value={2}>🙂</option>
+          <option value={3}>😄</option>
+          <option value={4}>🤩</option>
         </select>
       </div>
       <br />
@@ -35,8 +39,9 @@ const JournalInput = (props) => {
           cols="40" rows="10" 
           placeholder="Today was really nice. I first woke up and..." 
           onChange={props.handleChange}
-          required>
-        </textarea>
+          required
+          value={form.journal ? form.journal : ''}
+        />
       </div>
     </>
    );

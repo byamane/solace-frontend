@@ -2,7 +2,7 @@ import './SleepList.css'
 import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import SleepCard from "../../components/SleepCard/SleepCard"
 import { Link } from 'react-router-dom'
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import * as sleepService from '../../services/sleepService'
 
 import sleep1 from '../../assets/sleep1.png'
@@ -26,6 +26,7 @@ const SleepList = (props) => {
       props.setSleepLogs(data.reverse())
     }
     fetchData()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   
   return (  

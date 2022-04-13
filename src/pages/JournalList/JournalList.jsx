@@ -1,8 +1,9 @@
 import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import JournalCard from "../../components/JournalCard/JournalCard";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import * as journalService from '../../services/journalService'
+import "./JournalList.css"
 
 const JournalList = (props) => {
   console.log('props', props)
@@ -14,13 +15,14 @@ const JournalList = (props) => {
       props.setJournalEntries(data)
     }
     fetchData()
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [])
   
   return (  
     <>
       <h1>Your Journal</h1>
       <Link to='/journal/new'>
-        <button>
+        <button id="add-journal-btn">
           Add Journal Entry
         </button>
       </Link>
