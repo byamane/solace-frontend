@@ -1,7 +1,7 @@
 import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import JournalCard from "../../components/JournalCard/JournalCard";
 import { Link } from "react-router-dom";
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import * as journalService from '../../services/journalService'
 import "./JournalList.css"
 

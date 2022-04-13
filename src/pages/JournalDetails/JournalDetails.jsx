@@ -1,5 +1,5 @@
 import NavBarBot from "../../components/NavBarBot/NavBarBot";
-import { useLocation, Link } from "react-router-dom";
+import { useLocation } from "react-router-dom";
 import { useState } from 'react';
 import './JournalDetails.css'
 
@@ -9,7 +9,7 @@ import JournalActions from "./components/JournalActions";
 const JournalDetails = (props) => {
   
   const location = useLocation()
-  const [journal, setJournal] = useState(location.state)
+  const journal = useState(location.state)
   const journalDate = new Date(`${journal.date} EST`).toLocaleDateString()
 
   const emojiIndex = ["🥺", "😐", "🙂", "😄", "🤩"]
