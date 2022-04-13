@@ -12,6 +12,7 @@ import JournalList from './pages/JournalList/JournalList'
 import JournalForm from './pages/JournalForm/JournalForm'
 import JournalDetails from './pages/JournalDetails/JournalDetails'
 import Confirmation from './pages/Confirmation/Confirmation'
+import Meditation from './pages/Meditation/Meditation'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
 
 // Services
@@ -196,7 +197,14 @@ const App = () => {
             <ProtectedRoute user={user}>
               <Confirmation deleteJournal={deleteJournal} user={user} />
             </ProtectedRoute>
-          } />
+          } 
+        />
+        <Route path="/meditation" element={
+            <ProtectedRoute user={user}>
+              <Meditation user={user} />
+            </ProtectedRoute>
+          } 
+        />
       </Routes>
     </>
   )
