@@ -18,8 +18,15 @@
 } */
 
 #sleep-card-title h5 {
-  color: red;
-  margin: 0;
+  /* color: red; */
+  margin: 0 auto;
+  width: fit-content;
+  background-color: rgba(224, 226, 219, 0.7);
+  border-radius: 5px;
+  /* text-shadow: 1px 1px 4px #E0E2DB; */
+  font-size: 1.6rem;
+  /* display: flex;
+  justify-content: center; */
 }
 
 #sleep-card-date-rating p {

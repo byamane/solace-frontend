@@ -12,13 +12,13 @@ const SleepDetails = (props) => {
 
   return (  
     <>
-      <h1>Sleep Details</h1>
+      <h1 id="sleep-logs-title">Sleep Details</h1>
       <div id="sleep-details-btns">
         <Link 
           to={`/sleep/${sleep.id}/edit`}
           state={sleep}
         >
-          <button>
+          <button id="sleep-edit-btn">
             Edit
           </button>
         </Link>
@@ -26,14 +26,14 @@ const SleepDetails = (props) => {
           to={`/sleep/${sleep.id}/confirmation`}
           state={sleep}
         >
-          <button>
+          <button id="sleep-delete-btn">
             Delete
           </button>
         </Link>
       </div>
-      <div>
+      <div id="sleep-details-container">
         <div id="sleep-details-title">
-          <h3>Title: {sleep.name}</h3>
+          <h3>{sleep.name}</h3>
         </div>
         <div>
           <h3>Date: {sleepDate}</h3>

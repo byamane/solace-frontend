@@ -1,0 +1,50 @@
+#sleep-details-btns button {
+  /* color: red; */
+  width: 100px;
+  height: 40px;
+  font-size: 1.4rem;
+  margin: 0 10px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 3px black;
+  border: 1px solid white;
+  border-radius: 2px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+}
+
+#sleep-delete-btn {
+  /* background-color: #FF5E5B; */
+  background-color: rgba(214, 73, 51, 0.5);
+  /* border: 1px solid white;
+  border-radius: 2px; */
+}
+
+#sleep-edit-btn {
+  /* background-color: #58A4B0; */
+  background-color: rgba(88, 164, 176, 0.5);
+  /* border: 1px solid white;
+  border-radius: 2px; */
+}
+
+#sleep-details-container {
+  /* background-color: red; */
+  background-color: rgba(10, 10, 10, 0.7);
+  border: 1px solid white;
+  margin: 0 20px;
+  margin-bottom: 80px;
+}
+
+#sleep-details-title {
+  /* color: red; */
+  /* font-family: "Raleway", sans-serif; */
+  /* font-weight: 500; */
+  font-size: 1.4rem;
+  margin: 0 10px;
+}
+
+#sleep-details-notes p{
+  /* background-color: red; */
+  margin: 0 20px;
+  margin-bottom: 20px;
+  word-break: normal;
+}

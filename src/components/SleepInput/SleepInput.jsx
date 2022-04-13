@@ -1,3 +1,5 @@
+import './SleepInput.css'
+
 const SleepInput = (props) => {
   const form = props.form
   return (  
