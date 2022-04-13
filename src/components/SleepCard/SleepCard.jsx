@@ -10,6 +10,11 @@ const SleepCard = (props) => {
 
   const imgIdx = Math.floor(Math.random() * (props.sleepImgs.length))
 
+  // const sleepLength = props.sleep.name.length
+  // console.log(sleepLength)
+
+  const sleepName = props.sleep.name.length > 12 ? `${props.sleep.name.substring(0,12)}...` : props.sleep.name
+
   return (  
     <>
       {/* <h3>This is sleep card</h3> */}
@@ -27,7 +32,7 @@ const SleepCard = (props) => {
           }}>
           {/* <img src={`${props.sleepImgs[0]}`} alt="sleep_image" /> */}
           <div id="sleep-card-title">
-            <h5>{props.sleep.name}</h5>
+            <h5>{sleepName}</h5>
           </div>
           <div id="sleep-card-date-rating">
             <p>
