@@ -20,13 +20,13 @@ const JournalInput = (props) => {
           name="mood" 
           id="add-journal-mood" 
           onChange={props.handleChange}
-          value={form.mood ? form.mood : 1}
+          value={form.mood ? form.mood : 2}
         >
-          <option value={1}>🥺</option>
-          <option value={2}>😐</option>
-          <option value={3}>🙂</option>
-          <option value={4}>😄</option>
-          <option value={5}>🤩</option>
+          <option value={0}>🥺</option>
+          <option value={1}>😐</option>
+          <option value={2}>🙂</option>
+          <option value={3}>😄</option>
+          <option value={4}>🤩</option>
         </select>
       </div>
       <br />
