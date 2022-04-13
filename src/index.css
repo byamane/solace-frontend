@@ -1,22 +1,19 @@
 body {
   margin: 0;
-  font-family: "Raleway",
-    sans-serif;
+  font-family: "Raleway", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   background-image: url("../public/Solace.png");
   background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
   color: white;
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
 }
 
 h1 {
   font-size: 80px;
+  margin: 0;
 }
 
 a {
