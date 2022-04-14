@@ -1,111 +1,117 @@
-import { useState, useEffect, useRef } from 'react';
-import AudioControls from './AudioControls';
+import { useState, useEffect, useRef } from 'react'
+import AudioControls from './AudioControls'
 import "./AudioPlayer.css"
 
 const AudioPlayer = ({ tracks }) => {
   // State
-  const [trackIndex, setTrackIndex] = useState(0);
-  const [trackProgress, setTrackProgress] = useState(0);
-  const [isPlaying, setIsPlaying] = useState(false);
+  const [trackIndex, setTrackIndex] = useState(0)
+  const [trackProgress, setTrackProgress] = useState(0)
+  const [isPlaying, setIsPlaying] = useState(false)
 
   // Destructure for conciseness
-  const { title, artist, color, image, audioSrc } = tracks[trackIndex];
+  const { title, artist, image, audioSrc } = tracks[trackIndex]
 
   // Refs
-  const audioRef = useRef(new Audio(audioSrc));
-  const intervalRef = useRef();
-  const isReady = useRef(false);
+  const audioRef = useRef(new Audio(audioSrc))
+  const intervalRef = useRef()
+  const isReady = useRef(false)
 
   // Destructure for conciseness
   const { duration } = audioRef.current;
 
+  // Progress bar calc & styling (used in input section in return for "max" and "style")
   const currentPercentage = duration
     ? `${(trackProgress / duration) * 100}%`
-    : "0%";
+    : "0%"
   const trackStyling = `
     -webkit-gradient(linear, 0% 0%, 100% 0%, color-stop(${currentPercentage}, #fff), color-stop(${currentPercentage}, #777))
-  `;
+  `
 
   const startTimer = () => {
     // Clear any timers already running
-    clearInterval(intervalRef.current);
+    clearInterval(intervalRef.current)
 
+    // Auto-plays next song if over otherwise sets track state to current time of song 
     intervalRef.current = setInterval(() => {
       if (audioRef.current.ended) {
-        toNextTrack();
+        toNextTrack()
       } else {
-        setTrackProgress(audioRef.current.currentTime);
+        setTrackProgress(audioRef.current.currentTime)
       }
-    }, [1000]);
-  };
+    }, [1000])
+  }
 
+  // Clear any timers already running and sets track state to current time upon a scrub
   const onScrub = (value) => {
-    // Clear any timers already running
-    clearInterval(intervalRef.current);
-    audioRef.current.currentTime = value;
-    setTrackProgress(audioRef.current.currentTime);
-  };
+    clearInterval(intervalRef.current)
+    audioRef.current.currentTime = value
+    setTrackProgress(audioRef.current.currentTime)
+  }
 
+  // If not already playing, start and run startTimer function to keep track of track state
   const onScrubEnd = () => {
-    // If not already playing, start
     if (!isPlaying) {
-      setIsPlaying(true);
+      setIsPlaying(true)
     }
-    startTimer();
-  };
+    startTimer()
+  }
 
+  // Previous track functionality via tracks array
   const toPrevTrack = () => {
     if (trackIndex - 1 < 0) {
-      setTrackIndex(tracks.length - 1);
+      setTrackIndex(tracks.length - 1)
     } else {
-      setTrackIndex(trackIndex - 1);
+      setTrackIndex(trackIndex - 1)
     }
-  };
+  }
 
+  // Next track functionality via tracks array
   const toNextTrack = () => {
     if (trackIndex < tracks.length - 1) {
-      setTrackIndex(trackIndex + 1);
+      setTrackIndex(trackIndex + 1)
     } else {
-      setTrackIndex(0);
+      setTrackIndex(0)
     }
-  };
+  }
 
+  // if isPlaying is true, play the current song at specified volume, and run startTimer() to track song state --- else pause
   useEffect(() => {
     if (isPlaying) {
       audioRef.current.play();
       audioRef.current.volume = 0.1
-      startTimer();
+      startTimer()
     } else {
-      audioRef.current.pause();
+      audioRef.current.pause()
     }
-  }, [isPlaying]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [isPlaying])
 
-  // Handles cleanup and setup when changing tracks
+  // Changing track functionality - pause prev song, change current audioRef to new song and set new track state
   useEffect(() => {
-    audioRef.current.pause();
-
-    audioRef.current = new Audio(audioSrc);
-    setTrackProgress(audioRef.current.currentTime);
+    audioRef.current.pause()
+    audioRef.current = new Audio(audioSrc)
+    setTrackProgress(audioRef.current.currentTime)
 
     if (isReady.current) {
-      audioRef.current.play();
+      audioRef.current.play()
       // hardcode volume - volume slider for icebox in the future
       audioRef.current.volume = 0.1
-      setIsPlaying(true);
-      startTimer();
+      setIsPlaying(true)
+      startTimer()
     } else {
       // Set the isReady ref as true for the next pass
-      isReady.current = true;
+      isReady.current = true
     }
-  }, [trackIndex]);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [trackIndex])
 
   useEffect(() => {
-    // Pause and clean up on unmount
+    // Pause and clear timer upon page render (ends song when you leave pages, etc.)
     return () => {
-      audioRef.current.pause();
-      clearInterval(intervalRef.current);
-    };
-  }, []);
+      audioRef.current.pause()
+      clearInterval(intervalRef.current)
+    }
+  }, [])
 
   return (
     <div className="audio-player">
@@ -138,6 +144,6 @@ const AudioPlayer = ({ tracks }) => {
       </div>
     </div>
   );
-};
+}
 
-export default AudioPlayer;
+export default AudioPlayer
