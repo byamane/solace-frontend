@@ -1,29 +1,59 @@
 .hp-header {
-  text-shadow: -1px 0 black, 0 0 black, 0 0 black, 0 0 black;
+  /* text-shadow: -1px 0 black, 0 0 black, 0 0 black, 0 0 black; */
   /* margin: 0 auto; */
   /* margin-top: 20px; */
   /* padding-top: 20px; */
+  /* text-shadow: 1px 1px 6px black; */
 }
 
 .hp-welcome {
   font-style: italic;
-  text-shadow: -1px 0 black, 0 0 black, 0 0 black, 0 0 black;
+  font-size: 1.2rem;
+  /* text-shadow: -1px 0 black, 0 0 black, 0 0 black, 0 0 black; */
+  text-shadow: 1px 1px 1px black;
 }
 
 .hp-message {
-  margin: 0 20px;
+  /* margin: 0 20px; */
   /* margin-top: 100px; */
   /* position: absolute; */
-
   font-size: 1.2rem;
-  text-shadow: -1px 0 black, 0 0 black, 0 0 black, 0 0 black;
+  /* text-shadow: -1px 0 black, 0 0 black, 0 0 black, 0 0 black; */
+  text-shadow: 1px 1px 1px black;
+  margin: 0 10px;
 }
 
 .hp-footer {
   font-style: italic;
-  text-shadow: -1px 0 black, 0 0 black, 0 0 black, 0 0 black;
-  position: absolute;
-  bottom: 5%;
+  /* text-shadow: -1px 0 black, 0 0 black, 0 0 black, 0 0 black; */
+  padding: 0;
+  margin: 0;
+  text-shadow: 1px 1px 1px black;
+  position: relative;
+  bottom: 70px;
+  /* bottom: 0vh;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
+}
+
+#theme-card-container {
+  /* background-color: red; */
+  margin: 0 20px;
+  /* padding-bottom: 40px; */
+  /* margin-bottom: 200px; */
+  display: flex;
+  /* flex-direction: column; */
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+#theme-select-container {
+  /* margin-bottom: 100px; */
+  padding-bottom: 80px;
+}
+
+#select-theme-title {
+  text-shadow: 1px 1px 2px black;
 }

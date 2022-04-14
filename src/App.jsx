@@ -35,6 +35,7 @@ const App = () => {
   const [user, setUser] = useState(authService.getUser())
   const [sleepLogs, setSleepLogs] = useState([])
   const [journalEntries, setJournalEntries] = useState([])
+  const [bg, setBg] = useState(null)
   const navigate = useNavigate()
 
   const addSleep = async (sleepData) => {
@@ -82,13 +83,21 @@ const App = () => {
   }
 
   const bgImg = [bg0, bg1, bg2, bg3, bg4, bg5, bg6, bg7]
+  // let currentBg = null
+  const handleBgChange = (idx) => {
+    setBg(idx)
+    console.log(bg)
+  }
 
   return (
     <div 
       id='app-container'
-      style={{
-        backgroundImage: `url(${bg0})`
-      }}
+      style={
+        bg ? 
+        { backgroundImage: `url(${bgImg[bg]})` }
+        : 
+        { backgroundImage: `url(${bgImg[0]})` }
+      }
     >
       <Routes>
         <Route 
@@ -105,6 +114,7 @@ const App = () => {
             <Home 
               user={user}
               bgImg={bgImg}
+              handleBgChange={handleBgChange}
               // handleLogout={handleLogout}
             />
           }

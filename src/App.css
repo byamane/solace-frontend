@@ -45,5 +45,6 @@ h1 {
   margin: 0 auto;
   font-size: 5.0rem;
   padding-top: 20px;
+  text-shadow: 1px 1px 6px black !important;
 }
 
