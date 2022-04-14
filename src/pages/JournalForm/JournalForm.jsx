@@ -1,4 +1,4 @@
-import NavBarBot from "../../components/NavBarBot/NavBarBot";
+// import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import JournalInput from "../../components/JournalInput/JournalInput";
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from "react-router-dom";
@@ -59,7 +59,7 @@ const JournalForm = (props) => {
           </button>
         </div>
       </form>
-      <NavBarBot />
+      {/* <NavBarBot /> */}
     </>
    );
 }

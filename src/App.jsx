@@ -13,6 +13,7 @@ import JournalForm from './pages/JournalForm/JournalForm'
 import JournalDetails from './pages/JournalDetails/JournalDetails'
 import Confirmation from './pages/Confirmation/Confirmation'
 import Meditation from './pages/Meditation/Meditation'
+import NavBarBot from './components/NavBarBot/NavBarBot'
 import ProtectedRoute from './components/ProtectedRoute/ProtectedRoute'
 import './App.css'
 
@@ -21,10 +22,20 @@ import * as authService from './services/authService'
 import * as sleepService from './services/sleepService'
 import * as journalService from './services/journalService'
 
+import bg0 from '../src/assets/solacebg0.png'
+import bg1 from '../src/assets/solacebg1.jpeg'
+import bg2 from '../src/assets/solacebg2.jpeg'
+import bg3 from '../src/assets/solacebg3.jpeg'
+import bg4 from '../src/assets/solacebg4.jpeg'
+import bg5 from '../src/assets/solacebg5.jpeg'
+import bg6 from '../src/assets/solacebg6.jpeg'
+import bg7 from '../src/assets/solacebg7.jpeg'
+
 const App = () => {
   const [user, setUser] = useState(authService.getUser())
   const [sleepLogs, setSleepLogs] = useState([])
   const [journalEntries, setJournalEntries] = useState([])
+  const [bg, setBg] = useState(null)
   const navigate = useNavigate()
 
   const addSleep = async (sleepData) => {
@@ -71,12 +82,22 @@ const App = () => {
     setUser(authService.getUser())
   }
 
+  const bgImg = [bg0, bg1, bg2, bg3, bg4, bg5, bg6, bg7]
+  // let currentBg = null
+  const handleBgChange = (idx) => {
+    setBg(idx)
+    console.log(bg)
+  }
+
   return (
     <div 
       id='app-container'
-      style={{
-        // backgroundImage: `url(../public/Solace.png)`
-      }}
+      style={
+        bg ? 
+        { backgroundImage: `url(${bgImg[bg]})` }
+        : 
+        { backgroundImage: `url(${bgImg[0]})` }
+      }
     >
       <Routes>
         <Route 
@@ -92,7 +113,9 @@ const App = () => {
           element={
             <Home 
               user={user}
-              handleLogout={handleLogout}
+              bgImg={bgImg}
+              handleBgChange={handleBgChange}
+              // handleLogout={handleLogout}
             />
           }
         />
@@ -212,6 +235,11 @@ const App = () => {
           } 
         />
       </Routes>
+      {user ? 
+        <NavBarBot handleLogout={handleLogout} />
+      :
+        <></>
+      }
     </div>
   )
 }

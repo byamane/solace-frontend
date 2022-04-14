@@ -1,5 +1,5 @@
 import './SleepList.css'
-import NavBarBot from "../../components/NavBarBot/NavBarBot";
+// import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import SleepCard from "../../components/SleepCard/SleepCard"
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react';
@@ -46,7 +46,7 @@ const SleepList = (props) => {
       :
         <></>
       }
-      <NavBarBot />
+      {/* <NavBarBot color={props.bgchange} /> */}
     </>
   );
 }

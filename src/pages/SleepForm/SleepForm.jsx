@@ -1,4 +1,4 @@
-import NavBarBot from "../../components/NavBarBot/NavBarBot";
+// import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import SleepInput from "../../components/SleepInput/SleepInput";
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from "react-router-dom";
@@ -64,7 +64,7 @@ const SleepForm = (props) => {
           </button>
         </div>
       </form>
-      <NavBarBot />
+      {/* <NavBarBot /> */}
     </>
   );
 }
