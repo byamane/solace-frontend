@@ -43,3 +43,4 @@ To use this app, all you need to get going is to create an account! From there, 
  
 ### Credits
 + Favicon & logo created from [Free Logo Maker](https://www.freelogodesign.org/logo-maker)
++ Music from [Alex-Productions](https://www.youtube.com/channel/UCx0_M61F81Nfb-BRXE-SeVA) & [Spheria](https://soundcloud.com/spheriamusic)
