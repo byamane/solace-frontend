@@ -17,7 +17,7 @@ input[type="range"] {
   max-width: 275px;
   padding: 24px;
   border-radius: 20px;
-  box-shadow: 0 28px 28px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 1px 3px black;
   margin: auto;
   margin-top: 20px;
   color: #fff;

@@ -1,25 +1,27 @@
+import "./JournalInput.css"
+
 const JournalInput = (props) => {
   const form = props.form
   return ( 
     <>
-      <div id="add-sleep-title-container">
+      <div id="add-journal-title-container">
         <label htmlFor="add-journal-title">Title: </label>
         <input 
           name="name" 
           id="add-journal-title" 
           placeholder="Title of Your Day" 
           onChange={props.handleChange}
+          maxLength={100}
           required
           value={form.name ? form.name : ''}  
         />
       </div>
-      <br />
-      <div>
+      <div id="add-journal-date-container">
         <label htmlFor="">Date: </label>
         <input 
           type="date"
           name="date"
-          id="add-sleep-date"
+          id="add-journal-date"
           onChange={props.handleChange}
           pattern="\d{2}-\d{2}-\d{4}"
           value={form.date ? 
@@ -29,8 +31,7 @@ const JournalInput = (props) => {
           }
         />
       </div>
-      <br />
-      <div id="add-sleep-rating-container">
+      <div id="add-journal-mood-container">
         <label htmlFor="add-journal-mood">Mood: </label>
         <select 
           name="mood" 
@@ -45,14 +46,12 @@ const JournalInput = (props) => {
           <option value={4}>🤩</option>
         </select>
       </div>
-      <br />
-      <div id="add-sleep-notes-container">
+      <div id="add-journal-section-container">
         <label htmlFor="add-journal-section">What's on your mind?</label>
-        <br />
         <textarea 
           name="journal" 
           id="add-journal-section" 
-          cols="40" rows="10" 
+          cols="35" rows="14" 
           placeholder="Today was really nice. I first woke up and..." 
           onChange={props.handleChange}
           required
@@ -60,7 +59,7 @@ const JournalInput = (props) => {
         />
       </div>
     </>
-   );
+  );
 }
- 
+
 export default JournalInput;
