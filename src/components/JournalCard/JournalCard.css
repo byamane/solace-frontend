@@ -13,12 +13,19 @@
 }
 
 #journal-card-title {
-  color: rgb(174, 25, 159);
-  margin: 0;
+  margin: 0 auto;
+  margin-top: 10px;
+  padding: 10px;
+  width: fit-content;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 5px;
+  /* text-shadow: 1px 1px 4px #E0E2DB; */
+  font-size: 1.6rem;
+  /* font-weight: 00; */
 }
 
-#journal-card-date-rating p {
-  background-color: #E0E2DB;
+#journal-card-footer {
+  background-color: rgba(255, 255, 255, 0.9);
   /* color: white; */
   margin: 0;
   padding: 0 10px;
@@ -26,4 +33,12 @@
   border-bottom-right-radius: 10px;
   display: flex;
   justify-content: space-between;
+}
+
+#journal-card-footer > p {
+  margin: 0;
+}
+
+#journal-mood {
+  color: rgba(0,0,0,1);
 }

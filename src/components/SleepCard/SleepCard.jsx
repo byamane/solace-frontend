@@ -8,7 +8,7 @@ const SleepCard = (props) => {
   // const sleepDate2 = sleepDate.toDateString()
   // console.log('sleepdate', sleepDate)
 
-  const imgIdx = Math.floor(Math.random() * (props.sleepImgs.length))
+  const imgIdx = Math.floor(Math.random() * (props.sleepImgs.length)) 
 
   // const sleepLength = props.sleep.name.length
   // console.log(sleepLength)

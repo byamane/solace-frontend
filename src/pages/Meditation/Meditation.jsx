@@ -14,4 +14,4 @@ const Meditation = (props) => {
    );
 }
  
-export default Meditation;
+export default Meditation

@@ -1,8 +1,7 @@
-import React from 'react';
 import { ReactComponent as Play } from '../../../assets/play.svg'
-import { ReactComponent as Pause } from '../../../assets/pause.svg';
-import { ReactComponent as Next } from '../../../assets/next.svg';
-import { ReactComponent as Prev } from '../../../assets/prev.svg';
+import { ReactComponent as Pause } from '../../../assets/pause.svg'
+import { ReactComponent as Next } from '../../../assets/next.svg'
+import { ReactComponent as Prev } from '../../../assets/prev.svg'
 
 const AudioControls = ({
   isPlaying,
@@ -13,7 +12,7 @@ const AudioControls = ({
   <div className="audio-controls">
     <button
       type="button"
-      className="prev"
+      className="prev audio-control-btn"
       aria-label="Previous"
       onClick={onPrevClick}
     >
@@ -22,7 +21,7 @@ const AudioControls = ({
     {isPlaying ? (
       <button
         type="button"
-        className="pause"
+        className="pause audio-control-btn"
         onClick={() => onPlayPauseClick(false)}
         aria-label="Pause"
       >
@@ -31,7 +30,7 @@ const AudioControls = ({
     ) : (
       <button
         type="button"
-        className="play"
+        className="play audio-control-btn"
         onClick={() => onPlayPauseClick(true)}
         aria-label="Play"
       >
@@ -40,7 +39,7 @@ const AudioControls = ({
     )}
     <button
       type="button"
-      className="next"
+      className="next audio-control-btn"
       aria-label="Next"
       onClick={onNextClick}
     >
@@ -49,5 +48,5 @@ const AudioControls = ({
   </div>
 );
 
-export default AudioControls;
+export default AudioControls
 
