@@ -35,11 +35,11 @@ const Timer = () => {
       <div className="time">
         {result}
       </div>
-      <div className="row">
-        <button className={`button button-primary button-primary-${isActive ? 'active' : 'inactive'}`} onClick={toggle}>
+      <div className="timer-control-btns">
+        <button className={`start-timer-btn button-${isActive ? 'active' : 'inactive'}`} onClick={toggle}>
           {isActive ? 'Pause' : 'Start'}
         </button>
-        <button className="button" onClick={reset}>
+        <button className="reset-timer-btn" onClick={reset}>
           Reset
         </button>
       </div>
