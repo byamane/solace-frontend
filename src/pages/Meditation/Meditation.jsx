@@ -1,4 +1,4 @@
-// import NavBarBot from "../../components/NavBarBot/NavBarBot";
+import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import Timer from "./components/Timer";
 import AudioPlayer from "./components/AudioPlayer";
 import tracks from "./components/Tracks";
@@ -11,7 +11,7 @@ const Meditation = (props) => {
       <h1>Meditate</h1>
       <Timer />
       <AudioPlayer tracks={tracks} />
-      {/* <NavBarBot /> */}
+      <NavBarBot />
     </>
    );
 }
