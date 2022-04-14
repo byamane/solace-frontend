@@ -34,9 +34,19 @@ const SleepList = (props) => {
     <>
       <Header /> 
       <h1 id="sleep-logs-title">Sleep</h1>
-      <Link to='/sleep/new'>
+      <Link to='/sleep/new'
+        style={{
+          textDecoration: 'none'
+        }}
+      >
         <button id='add-sleep-btn-sleep-list'>
-          Add Sleep
+          <i 
+            className='material-icons' 
+            id='sleep-add'
+          >
+            add_box
+          </i>
+          Log Sleep
         </button>
       </Link>
       {props.sleepLogs.length ? 

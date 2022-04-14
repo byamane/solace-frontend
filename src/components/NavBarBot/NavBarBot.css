@@ -1,4 +1,4 @@
-.material-icons {
+.bot-nav-icon {
   /* color: #4a20c7; */
   color: white;
   font-size: 40px;
@@ -6,10 +6,10 @@
   border: 2px solid white;
   border-radius: 50%;
   box-shadow: 0px 0px 10px black;
-  background-color: rgba(10, 10, 10, 0.6);
+  background-color: rgba(10, 10, 10, 0.8);
 }
 
-.material-icons:hover {
+.bot-nav-icon:hover {
   cursor: pointer;
   background-color: #c7aaff;
   /* color: black; */

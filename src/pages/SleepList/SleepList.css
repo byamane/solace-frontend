@@ -5,12 +5,33 @@
 
 #add-sleep-btn-sleep-list {
   /* color: red; */
+  margin: 0 auto;
   margin-bottom: 25px;
   font-size: 2.0rem;
+  /* background-color: #E0E0E0; */
+  background-color: #606C67;
+  border-radius: 5px;
+  box-shadow: 2px 2px 3px black;
+  /* border: 2px solid lightgray; */
+  border: 2px solid #ffffff;
+  /* color: #c7aaff; */
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+#sleep-add {
+  font-size: 1.6rem;
+  /* text-align: center; */
+  font-weight: 300;
+
 }
 
 #sleep-card-sleep-list:last-of-type {
   /* margin-bottom: 90px; */
   /* border-bottom: 40px; */
   padding-bottom: 60px;
+  height: 100%;
 }

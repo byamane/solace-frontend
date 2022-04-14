@@ -2,6 +2,7 @@
 import { useLocation, Link } from "react-router-dom";
 // import { useState } from 'react';
 import './SleepDetails.css'
+import Header from "../../components/Header/Header";
 
 const SleepDetails = (props) => {
   const location = useLocation()
@@ -14,6 +15,7 @@ const SleepDetails = (props) => {
 
   return (  
     <>
+      <Header />
       <h1 id="sleep-logs-title">Sleep Details</h1>
       <div id="sleep-details-btns">
         <Link 
