@@ -10,6 +10,7 @@ const Meditation = (props) => {
     <>
       <h1>Meditate</h1>
       <Timer />
+      <AudioPlayer tracks={tracks} />
       {/* <NavBarBot /> */}
     </>
    );
