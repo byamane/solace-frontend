@@ -1,5 +1,6 @@
 import { useState } from 'react'
 import SignupForm from '../../components/SignupForm/SignupForm'
+import solaceTitle from '../../assets/solace_title3.png'
 import './Signup.css'
 
 const Signup = props => {
@@ -10,11 +11,13 @@ const Signup = props => {
   }
 
   return (
-    <main className='container'>
-      <h1>Sign Up</h1>
-      <p>{message}</p>
-      <SignupForm {...props} updateMessage={updateMessage} />
-    </main>
+    <>
+      <img src={solaceTitle} alt="Solace" id="signup-title-img" />
+      <main className='container'>
+        <p>{message}</p>
+        <SignupForm {...props} updateMessage={updateMessage} />
+      </main>
+    </>
   )
 }
 

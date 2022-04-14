@@ -3,6 +3,7 @@ import JournalCard from "../../components/JournalCard/JournalCard";
 import { Link } from "react-router-dom";
 import { useEffect } from 'react';
 import * as journalService from '../../services/journalService'
+import Header from "../../components/Header/Header";
 import "./JournalList.css"
 
 import journal1 from '../../assets/journal1.png'
@@ -30,6 +31,7 @@ const JournalList = (props) => {
   
   return (  
     <>
+      <Header />
       <h1>Reflect</h1>
       <Link to='/journal/new'>
         <button id="add-journal-btn">

@@ -57,5 +57,5 @@ const SleepDetails = (props) => {
     </>
   );
 }
- 
+
 export default SleepDetails;

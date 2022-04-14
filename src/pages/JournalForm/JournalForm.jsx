@@ -1,5 +1,6 @@
 // import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import JournalInput from "../../components/JournalInput/JournalInput";
+import Header from "../../components/Header/Header";
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 
@@ -36,6 +37,7 @@ const JournalForm = (props) => {
   
   return (
     <>
+      <Header />
       {id ?
         <h1>Edit Journal</h1>
       :

@@ -45,5 +45,5 @@ const SleepCard = (props) => {
     </>
   );
 }
- 
+
 export default SleepCard;

@@ -1,4 +1,5 @@
 import { useLocation } from "react-router-dom";
+import Header from "../../components/Header/Header";
 import './JournalDetails.css'
 
 // Components
@@ -14,6 +15,7 @@ const JournalDetails = (props) => {
   
   return ( 
     <>
+    <Header />
       <h1>Journal Details</h1>
       <div id="journal-details-btns">
         <JournalActions journal={journal} user={props.user} />
@@ -31,6 +33,7 @@ const JournalDetails = (props) => {
           <h3>Mood: {emojiIndex[journal.mood]}</h3>
         </div>
         <div id="journal-details-journal">
+          <h3>Message: </h3>
           <p>{journal.journal}</p>
         </div>
       </div>
