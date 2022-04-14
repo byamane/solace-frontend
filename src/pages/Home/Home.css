@@ -58,7 +58,8 @@
 
 #select-theme-title {
   text-shadow: 1px 1px 2px black;
-  margin: 10px auto;
+  margin: 20px auto;
+  margin-top: 40px;
 
 }
 
@@ -67,10 +68,16 @@
   /* background-repeat: no-repeat; */
   /* width: 59.7vw; */
   /* width: 50.7vw; */
-  width: 190.1px;
+  /* width: 190.1px; */
   /* height: 20.7vh; */
   /* height: 17.7vh; */
-  height: 143.7px;
+  /* height: 143.7px; */
   /* image-resolution: from-image 5000dpi; */
-
+  width: 60vw;
+  /* position: relative;
+  top: -20px; */
+  /* border: 2px solid red; */
+  height: 10vh;
+  object-fit: cover;
+  margin: 2vh auto;
 }
