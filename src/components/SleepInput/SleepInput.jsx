@@ -9,14 +9,14 @@ const SleepInput = (props) => {
         <input 
           name="name" 
           id="add-sleep-title" 
-          placeholder="Enter Title" 
+          placeholder="Slept Great!" 
           onChange={props.handleChange}
           required
           value={form.name ? form.name : ''}
         />
       </div>
-      <br />
-      <div>
+      {/* <br /> */}
+      <div id='add-sleep-date-container'>
         <label htmlFor="">Date: </label>
         <input 
           type="date"
@@ -32,7 +32,7 @@ const SleepInput = (props) => {
         />
         {/* {console.log(new Date().toISOString().substring(0,10))} */}
       </div>
-      <br />
+      {/* <br /> */}
       <div id="add-sleep-rating-container">
         <label htmlFor="add-sleep-rating">Rating: </label>
         <select 
@@ -48,14 +48,14 @@ const SleepInput = (props) => {
           <option value={5}>5</option>
         </select>
       </div>
-      <br />
+      {/* <br /> */}
       <div id="add-sleep-notes-container">
         <label htmlFor="add-sleep-notes">Notes: </label>
         <br />
         <textarea 
           name="notes" 
           id="add-sleep-notes" 
-          cols="30" rows="15" 
+          cols="30" rows="14" 
           placeholder="Ex: I slept wonderfully. I slept for 12hrs. etc..." 
           onChange={props.handleChange}
           required

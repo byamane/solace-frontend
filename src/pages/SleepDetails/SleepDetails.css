@@ -56,6 +56,7 @@
   margin-top: 5px;
   margin-bottom: 20px;
   word-break: break-word;
+  white-space: pre-wrap;
 }
 
 #sleep-details-notes h3 {
