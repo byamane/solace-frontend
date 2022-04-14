@@ -1,0 +1,12 @@
+#theme-btn {
+  /* color: red; */
+  width: 30vw;
+  height: 10vh;
+  background-position: center;
+  background-size: cover;
+  /* background-attachment: fixed; */
+  border: none;
+  border-radius: 10px;
+  box-shadow: 3px 4px 5px black;
+
+}

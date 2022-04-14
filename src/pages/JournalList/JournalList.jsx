@@ -1,4 +1,4 @@
-import NavBarBot from "../../components/NavBarBot/NavBarBot";
+// import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import JournalCard from "../../components/JournalCard/JournalCard";
 import { Link } from "react-router-dom";
 import { useEffect } from 'react';
@@ -35,7 +35,7 @@ const JournalList = (props) => {
       :
         <></>
       }
-    <NavBarBot/>
+    {/* <NavBarBot/> */}
     </>
   );
 }
