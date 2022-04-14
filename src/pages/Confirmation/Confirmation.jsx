@@ -1,4 +1,5 @@
 import { useNavigate, useLocation, useParams, Link } from 'react-router-dom'
+import Header from '../../components/Header/Header'
 
 const Confirmation = (props) => {
   const { id } = useParams()
@@ -17,6 +18,7 @@ const Confirmation = (props) => {
 
   return (
     <>
+      <Header />
       <div className="page-header">
         <h2>Delete Confirmation</h2>
       </div>

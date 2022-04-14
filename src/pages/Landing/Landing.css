@@ -3,3 +3,10 @@
   align-items: center;
   flex-direction: column;
 }
+
+#landing-title-img {
+  width: 60vw;
+  height: 10vh;
+  object-fit: cover;
+  margin: 2vh auto;
+}

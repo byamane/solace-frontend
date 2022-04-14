@@ -32,7 +32,7 @@ const JournalCard = ({journal, journalImgs}) => {
         </div>
       </div> 
     </Link>
-   );
+  );
 }
  
 export default JournalCard;

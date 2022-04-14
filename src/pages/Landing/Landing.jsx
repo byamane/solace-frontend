@@ -1,8 +1,8 @@
 // import styles from './Landing.module.css'
 import './Landing.css'
-import LoginForm from '../../components/LoginForm/LoginForm'
 import { useState } from 'react';
-
+import LoginForm from '../../components/LoginForm/LoginForm'
+import solaceTitle from '../../assets/solace_title3.png'
 
 const Landing = ({ user, handleSignupOrLogin }) => {
   const [message, setMessage] = useState([''])
@@ -13,8 +13,8 @@ const Landing = ({ user, handleSignupOrLogin }) => {
 
   return (
     <>
+    <img src={solaceTitle} alt="Solace" id="landing-title-img" />
       <main className='container'>
-        <h1>Solace</h1>
       </main>
       <p>{message}</p>
       <LoginForm 
