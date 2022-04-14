@@ -39,6 +39,7 @@
   /* padding-bottom: 40px; */
   /* padding-top: 20px; */
   /* padding: 0; */
+  overflow: hidden;
 }
 
 h1 {

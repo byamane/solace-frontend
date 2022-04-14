@@ -4,6 +4,7 @@ import SleepCard from "../../components/SleepCard/SleepCard"
 import { Link } from 'react-router-dom'
 import { useEffect } from 'react';
 import * as sleepService from '../../services/sleepService'
+import Header from '../../components/Header/Header';
 
 import sleep1 from '../../assets/sleep1.png'
 import sleep2 from '../../assets/sleep2.png'
@@ -31,7 +32,8 @@ const SleepList = (props) => {
   
   return (  
     <>
-      <h1 id="sleep-logs-title">Sleep Logs!</h1>
+      <Header /> 
+      <h1 id="sleep-logs-title">Sleep</h1>
       <Link to='/sleep/new'>
         <button id='add-sleep-btn-sleep-list'>
           Add Sleep

@@ -10,3 +10,7 @@
   box-shadow: 3px 4px 5px black;
 
 }
+
+#theme-btn:focus {
+  border: 2px solid lightgray;
+}

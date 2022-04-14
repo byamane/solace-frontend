@@ -1,13 +1,15 @@
 // import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import "./Home.css"
 import ThemeSelect from "../../components/ThemeSelect/ThemeSelect";
+import solaceTitle from '../../assets/solace_title3.png'
 
 const Home = (props) => {
-  console.log(props)
+  // console.log(props)
   return (  
     <>
       <div>
-        <h1 className="hp-header">Solace</h1>
+        {/* <h1 className="hp-header">Solace</h1> */}
+        <img src={solaceTitle} alt="Solace" id="home-title-img" />
         <h4 className="hp-welcome">Welcome, {props.user.name}</h4>
         <h4 className="hp-message">Log your nightly sleep, reflect on your day in your journal, and practice mindfulness through meditation</h4>
         <div id="theme-select-container">

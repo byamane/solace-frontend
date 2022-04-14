@@ -1,7 +1,7 @@
 import './ThemeSelect.css'
 
 const ThemeSelect = (props) => {
-  console.log(props)
+  // console.log(props)
   return (  
     <>
       <div id='theme-btns-container'>
