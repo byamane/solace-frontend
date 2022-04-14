@@ -9,11 +9,11 @@
   background-color: rgba(10, 10, 10, 0.8);
 }
 
-.bot-nav-icon:hover {
+/* .bot-nav-icon:hover {
   cursor: pointer;
   background-color: #c7aaff;
-  /* color: black; */
-}
+  color: black;
+} */
 
 .navbar-links {
   margin: 0 auto;
@@ -31,4 +31,20 @@
   /* border-top: 1px solid rgb(37, 2, 63); */
   position: fixed;
   bottom: 0;
+}
+
+#home-btn:hover {
+  background-color: #9EB78F;
+}
+
+#bedtime:hover {
+  background-color: #c7aaff;
+}
+
+#menu-book:hover {
+  background-color: #58d4d8;
+}
+
+#self-improve:hover {
+  background-color: #f08080;
 }
