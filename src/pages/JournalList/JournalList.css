@@ -3,13 +3,16 @@
   height: 40px;
   font-size: 1.4rem;
   margin: 0 10px;
-  margin-bottom: 30px;
-  margin-top: 10px;
+  margin-bottom: 25px;
   box-shadow: 2px 2px 3px black;
-  border: 1px solid white;
-  border-radius: 2px;
+  border: 2px solid white;
+  border-radius: 5px;
   color: white;
   font-family: "Raleway", sans-serif;
   background-color: rgba(88, 212, 216, 0.9);
   text-shadow: 1px 1px 1px black !important;
 } 
+
+#journal-list-title {
+  margin-bottom: 20px;
+}

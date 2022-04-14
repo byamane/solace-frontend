@@ -66,5 +66,5 @@ const SleepInput = (props) => {
     </>
   );
 }
- 
+
 export default SleepInput;

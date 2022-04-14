@@ -3,6 +3,7 @@ import JournalInput from "../../components/JournalInput/JournalInput";
 import Header from "../../components/Header/Header";
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from "react-router-dom";
+import "./JournalForm.css"
 
 const JournalForm = (props) => {
   const { id } = useParams()
@@ -38,32 +39,36 @@ const JournalForm = (props) => {
   return (
     <>
       <Header />
-      {id ?
-        <h1>Edit Journal</h1>
-      :
-        <h1>Add Journal</h1>
-      }
+      <div id="journal-form-title">
+        {id ?
+          <h1>Edit Journal</h1>
+        :
+          <h1>Add Journal</h1>
+        }
+      </div>
       <form onSubmit={handleSubmit}>
-        <JournalInput 
-          form={form}
-          handleChange={handleChange}
-        />
-        <div id="add-journal-btn-container">
-          <button
-            type="submit"
-            id="add-journal-btn"
-          >
-            {id ? 
-              'Update'
-            :
-              'Add'
-            }
-          </button>
+        <div id="journal-form-input-container">
+          <JournalInput 
+            form={form}
+            handleChange={handleChange}
+          />
+          <div id="add-journal-btn-container">
+            <button
+              type="submit"
+              id="add-journal-change-btn"
+            >
+              {id ? 
+                'Update'
+              :
+                'Add'
+              }
+            </button>
+          </div>
         </div>
       </form>
       {/* <NavBarBot /> */}
     </>
-   );
+  );
 }
  
 export default JournalForm;

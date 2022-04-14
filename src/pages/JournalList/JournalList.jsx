@@ -32,7 +32,7 @@ const JournalList = (props) => {
   return (  
     <>
       <Header />
-      <h1>Reflect</h1>
+      <h1 id="journal-list-title">Reflect</h1>
       <Link to='/journal/new'>
         <button id="add-journal-btn">
           Add Journal Entry
