@@ -1,11 +1,8 @@
 import { useState, useEffect } from 'react'
-// import song from "../../../assets/meditate.mp3"
 
 const Timer = () => {
   const [seconds, setSeconds] = useState(300)
   const [isActive, setIsActive] = useState(false)
-  
-  // let audio = new Audio(song)
   
   function toggle() {
     setIsActive(!isActive)
