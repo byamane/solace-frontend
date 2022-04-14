@@ -49,3 +49,6 @@ h1 {
   text-shadow: 1px 1px 6px black !important;
 }
 
+button:hover {
+  cursor: pointer;
+}

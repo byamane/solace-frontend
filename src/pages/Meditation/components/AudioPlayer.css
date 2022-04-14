@@ -1,8 +1,4 @@
-:root {
-  --white: #fff;
-}
-
-button {
+.audio-control-btn {
   background: none;
   border: none;
   cursor: pointer;
@@ -18,22 +14,22 @@ input[type="range"] {
 }
 
 .audio-player {
-  max-width: 350px;
+  max-width: 275px;
   padding: 24px;
   border-radius: 20px;
   box-shadow: 0 28px 28px rgba(0, 0, 0, 0.2);
   margin: auto;
-  margin-top: 10px;
-  color: var(--white);
-  /* background-color: ; */
+  margin-top: 20px;
+  color: #fff;
+  background-color: rgba(240, 128, 128, 0.9);
 }
 
 .artwork {
   border-radius: 120px;
   display: block;
   margin: auto;
-  height: 200px;
-  width: 200px;
+  height: 140px;
+  width: 140px;
 }
 
 .track-info {
@@ -72,5 +68,5 @@ input[type="range"] {
 }
 
 .audio-controls path {
-  fill: var(--white);
+  fill: #fff;
 }
