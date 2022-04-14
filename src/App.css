@@ -31,15 +31,20 @@
 #app-container {
   /* background-color: blue; */
   min-height: 100vh;
-  background-image: url("../src/assets/Solace.png");
+  /* background-image: url("../src/assets/solacebg0.png"); */
   background-size: cover;
-  padding: 20px 0;
-  padding-bottom: 40px;
+  background-attachment: fixed;
+  background-position: center;
+  /* padding: 20px 0; */
+  /* padding-bottom: 40px; */
+  /* padding-top: 20px; */
+  /* padding: 0; */
 }
 
 h1 {
   margin: 0 auto;
   font-size: 5.0rem;
-  /* padding-top: 20px; */
+  padding-top: 20px;
+  text-shadow: 1px 1px 6px black !important;
 }
 

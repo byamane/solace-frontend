@@ -31,8 +31,10 @@
   background-color: rgba(10, 10, 10, 0.7);
   border: 1px solid white;
   margin: 0 20px;
-  margin-bottom: 80px;
+  /* margin-bottom: 80px; */
   /* padding-bottom: 400px; */
+  /* padding-bottom: 40px; */
+  /* border-bottom: 40px; */
 }
 
 #sleep-details-title {
@@ -48,4 +50,9 @@
   margin: 0 20px;
   margin-bottom: 20px;
   word-break: normal;
+}
+
+#sleep-details-div {
+  /* background-color: red; */
+  padding-bottom: 80px;
 }
