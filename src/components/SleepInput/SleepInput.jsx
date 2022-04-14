@@ -11,6 +11,7 @@ const SleepInput = (props) => {
           id="add-sleep-title" 
           placeholder="Slept Great!" 
           onChange={props.handleChange}
+          maxLength={100}
           required
           value={form.name ? form.name : ''}
         />
@@ -58,6 +59,7 @@ const SleepInput = (props) => {
           cols="30" rows="14" 
           placeholder="Ex: I slept wonderfully. I slept for 12hrs. etc..." 
           onChange={props.handleChange}
+          maxLength={500}
           required
           value={form.notes ? form.notes : ''}
         >

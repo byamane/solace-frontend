@@ -17,28 +17,42 @@ const Confirmation = (props) => {
     navigate(`/${resource}`)
   }
 
+  const delName = state.name.length > 75 ? `${state.name.substring(0,75)}...` : state.name
+  // console.log(state.name.length)
+  // console.log('delName', delName.length)
+
   return (
     <>
       <Header />
-      <div className="page-header">
-        <h2>Delete Confirmation</h2>
-      </div>
-      <section className="confirmation">
-        <h2>Are you sure you want to delete: <br /> {state?.name}</h2>
-        <button 
-          onClick={handleDelete} 
-          type="button" 
-          className="btn danger"
-        >
-          Yes - Delete!
-        </button>
-        <br />
-        <Link className="btn submit" to={`/${resource}/${id}`} state={state}>
-          <button>
-            Cancel
+        <div className="page-header" id='delete-conf-title'>
+          <h2>Delete Confirmation</h2>
+        </div>
+        <div id='delete-conf-container'>
+          <h2 id='delete-conf-msg'>Are you sure you want to delete: </h2>
+          <br /> 
+          <h4 id='delete-name'>{delName}</h4>
+        </div>
+        <div id='delete-btns-container'>
+          {/* <br /> */}
+          <button 
+            onClick={handleDelete} 
+            type="button"
+            id='delete-conf-delete'
+            >
+            Yes - Delete!
           </button>
+          <Link 
+            className="btn submit" 
+            to={`/${resource}/${id}`} 
+            state={state}
+          >
+            <button 
+              id='delete-conf-cancel'
+            >
+              Cancel
+            </button>
           </Link>
-      </section>
+        </div>
     </>
   )
 }
