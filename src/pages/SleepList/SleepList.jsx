@@ -40,13 +40,13 @@ const SleepList = (props) => {
         }}
       >
         <button id='add-sleep-btn-sleep-list'>
-          <i 
+          {/* <i 
             className='material-icons' 
             id='sleep-add'
           >
             add_box
-          </i>
-          Log Sleep
+          </i> */}
+          Add Sleep Log
         </button>
       </Link>
       {props.sleepLogs.length ? 

@@ -43,27 +43,31 @@ const SleepForm = (props) => {
   return (  
     <>
       <Header />
-      {id ? 
-        <h1 id="sleep-form-title">Edit Sleep</h1>
-      :
-        <h1 id="sleep-form-title">Add Sleep</h1>
-      }
+      <div id="sleep-form-title">
+        {id ? 
+          <h1>Edit Sleep</h1>
+          :
+          <h1>Add Sleep</h1>
+        }
+      </div>
       <form onSubmit={handleSubmit}>
-        <SleepInput 
-          form={form}
-          handleChange={handleChange}
-        />
-        <div id="add-sleep-btn-container">
-          <button
-            type="submit"
-            id="add-sleep-btn"
-          >
-            {id ? 
-              'Update'
-            :
-              'Add'
-            }
-          </button>
+        <div id="sleep-form-input-container">
+          <SleepInput 
+            form={form}
+            handleChange={handleChange}
+            />
+          <div id="add-sleep-btn-container">
+            <button
+              type="submit"
+              id="add-sleep-btn"
+              >
+              {id ? 
+                'Update'
+              :
+                'Add'
+              }
+            </button>
+          </div>
         </div>
       </form>
       {/* <NavBarBot /> */}
