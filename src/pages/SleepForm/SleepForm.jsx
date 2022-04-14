@@ -3,6 +3,7 @@ import SleepInput from "../../components/SleepInput/SleepInput";
 import { useState, useEffect } from 'react';
 import { useParams, useNavigate, useLocation } from "react-router-dom";
 import './SleepForm.css'
+import Header from '../../components/Header/Header'
 
 const SleepForm = (props) => {
   const { id } = useParams()
@@ -41,10 +42,11 @@ const SleepForm = (props) => {
 
   return (  
     <>
+      <Header />
       {id ? 
-        <h1>Edit Sleep</h1>
+        <h1 id="sleep-form-title">Edit Sleep</h1>
       :
-        <h1>Add Sleep</h1>
+        <h1 id="sleep-form-title">Add Sleep</h1>
       }
       <form onSubmit={handleSubmit}>
         <SleepInput 

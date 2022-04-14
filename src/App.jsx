@@ -86,7 +86,7 @@ const App = () => {
   // let currentBg = null
   const handleBgChange = (idx) => {
     setBg(idx)
-    console.log(bg)
+    // console.log(bg)
   }
 
   return (

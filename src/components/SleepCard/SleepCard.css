@@ -11,6 +11,7 @@
   flex-direction: column;
   justify-content: space-between;
   /* margin: 0; */
+  box-shadow: 0px 0px 5px black;
 }
 
 /* #sleep-card:last-of-type {
@@ -21,7 +22,7 @@
   /* color: red; */
   margin: 0 auto;
   width: fit-content;
-  background-color: rgba(224, 226, 219, 0.7);
+  background-color: rgba(224, 226, 219, 0.8);
   border-radius: 5px;
   /* text-shadow: 1px 1px 4px #E0E2DB; */
   font-size: 1.6rem;
