@@ -16,18 +16,15 @@
 #journal-card-title {
   margin: 0 auto;
   margin-top: 10px;
-  padding: 10px;
+  padding: 5px 10px;
   width: fit-content;
   background-color: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
-  /* text-shadow: 1px 1px 4px #E0E2DB; */
   font-size: 1.6rem;
-  /* font-weight: 00; */
 }
 
 #journal-card-footer {
   background-color: rgba(255, 255, 255, 0.9);
-  /* color: white; */
   margin: 0;
   padding: 0 10px;
   border-bottom-left-radius: 10px;

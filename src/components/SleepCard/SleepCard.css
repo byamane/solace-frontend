@@ -1,5 +1,4 @@
 #sleep-card {
-  background-color: lightgray;
   border-radius: 10px;
   width: 80vw;
   height: 25vh;
@@ -10,7 +9,6 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  /* margin: 0; */
   box-shadow: 0px 0px 5px black;
 }
 
@@ -18,21 +16,18 @@
   margin-bottom: 40px;
 } */
 
-#sleep-card-title h5 {
-  /* color: red; */
+#sleep-card-title h5{
   margin: 0 auto;
+  margin-top: 10px;
+  padding: 5px 10px;
   width: fit-content;
-  background-color: rgba(224, 226, 219, 0.8);
+  background-color: rgba(255, 255, 255, 0.9);
   border-radius: 5px;
-  /* text-shadow: 1px 1px 4px #E0E2DB; */
   font-size: 1.6rem;
-  /* display: flex;
-  justify-content: center; */
 }
 
 #sleep-card-date-rating p {
-  background-color: #E0E2DB;
-  /* color: white; */
+  background-color: rgba(255, 255, 255, 0.9);
   margin: 0;
   padding: 0 10px;
   border-bottom-left-radius: 10px;
