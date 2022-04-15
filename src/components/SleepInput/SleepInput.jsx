@@ -56,7 +56,7 @@ const SleepInput = (props) => {
         <textarea 
           name="notes" 
           id="add-sleep-notes" 
-          cols="30" rows="14" 
+          cols="35" rows="14" 
           placeholder="Ex: I slept wonderfully. I slept for 12hrs. etc..." 
           onChange={props.handleChange}
           maxLength={500}

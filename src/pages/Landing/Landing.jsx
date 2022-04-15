@@ -13,10 +13,12 @@ const Landing = ({ user, handleSignupOrLogin }) => {
 
   return (
     <>
-    <img src={solaceTitle} alt="Solace" id="landing-title-img" />
-      <main className='container'>
-      </main>
-      <p>{message}</p>
+      <img 
+        src={solaceTitle} 
+        alt="Solace" 
+        id="landing-title-img" 
+      />
+      <p id='log-in-msg'>{message}</p>
       <LoginForm 
         handleSignupOrLogin={handleSignupOrLogin}
         updateMessage={updateMessage}
