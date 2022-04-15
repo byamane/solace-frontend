@@ -12,11 +12,13 @@ const Signup = props => {
 
   return (
     <>
-      <img src={solaceTitle} alt="Solace" id="signup-title-img" />
-      <main className='container'>
-        <p>{message}</p>
-        <SignupForm {...props} updateMessage={updateMessage} />
-      </main>
+      <img 
+        src={solaceTitle} 
+        alt="Solace" 
+        id="signup-title-img" 
+      />
+      <p id='signup-msg'>{message}</p>
+      <SignupForm {...props} updateMessage={updateMessage} />
     </>
   )
 }

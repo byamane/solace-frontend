@@ -1,4 +1,4 @@
-#login-form-container {
+.login-signup-form-container {
   /* display: flex;
   flex-direction: column;
   justify-content: center;
@@ -9,30 +9,31 @@
   transform: translate(-50%, -50%);
 }
 
-.login-input-container {
+.input-container {
   font-size: 1.6rem;
   margin-bottom: 10px;
 }
 
-/* .login-input-container label {
-  margin-bottom: 10px;
-} */
+.input-container label {
+  /* color: red; */
+  text-shadow: 0px 0px 6px black;
+}
 
-.login-input-container input {
+.input-container input {
   font-size: 1.6rem;
   width: 60vw;
   margin-top: 5px;
   /* margin-bottom: 10px; */
 }
 
-#login-btns-container {
+.login-signup-btns-container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-#login-btns-container button {
+.login-signup-btns-container  button {
   /* color: red; */
   width: 100px;
   font-size: 1.4rem;

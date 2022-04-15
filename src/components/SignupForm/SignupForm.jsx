@@ -41,10 +41,11 @@ const SignupForm = props => {
     <form
       autoComplete="off"
       onSubmit={handleSubmit}
-      className='container'
+      className='login-signup-form-container'
     >
-      <div className='inputContainer'>
+      <div className='input-container'>
         <label htmlFor="name" className='lable'>Name: </label>
+        <br />
         <input
           type="text"
           autoComplete="off"
@@ -54,8 +55,9 @@ const SignupForm = props => {
           onChange={handleChange}
         />
       </div>
-      <div className='inputContainer'>
+      <div className='input-container'>
         <label htmlFor="email" className='lable'>Email: </label>
+        <br />
         <input
           type="text"
           autoComplete="off"
@@ -65,8 +67,9 @@ const SignupForm = props => {
           onChange={handleChange}
         />
       </div>
-      <div className='inputContainer'>
+      <div className='input-container'>
         <label htmlFor="password" className='lable'>Password: </label>
+        <br />
         <input
           type="password"
           autoComplete="off"
@@ -76,8 +79,9 @@ const SignupForm = props => {
           onChange={handleChange}
         />
       </div>
-      <div className='inputContainer'>
+      <div className='input-container'>
         <label htmlFor="confirm" className='lable'>Confirm Password: </label>
+        <br />
         <input
           type="password"
           autoComplete="off"
@@ -87,7 +91,7 @@ const SignupForm = props => {
           onChange={handleChange}
         />
       </div>
-      <div className='inputContainer'>
+      <div className='login-signup-btns-container'>
         <button disabled={isFormInvalid()} className='button'>
           Sign Up
         </button>
