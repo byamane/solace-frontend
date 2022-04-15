@@ -1,5 +1,4 @@
 #sleep-details-btns button {
-  /* color: red; */
   width: 100px;
   height: 40px;
   font-size: 1.4rem;
@@ -13,46 +12,28 @@
 }
 
 #sleep-delete-btn {
-  /* background-color: #FF5E5B; */
   background-color: rgba(214, 73, 51, 0.8);
-  /* border: 1px solid white;
-  border-radius: 2px; */
 }
 
 #sleep-edit-btn {
-  /* background-color: #58A4B0; */
   background-color: rgba(88, 164, 176, 0.8);
-  /* border: 1px solid white;
-  border-radius: 2px; */
 }
 
 #sleep-details-container {
-  /* background-color: red; */
   background-color: rgba(10, 10, 10, 0.8);
   border: 1px solid white;
   margin: 0 20px;
   text-align: left;
   padding: 0 15px;
-  /* padding-left: 10px; */
-  /* margin-bottom: 80px; */
-  /* padding-bottom: 400px; */
-  /* padding-bottom: 40px; */
-  /* border-bottom: 40px; */
 }
 
 
 #sleep-details-title {
-  /* color: red; */
-  /* font-family: "Raleway", sans-serif; */
-  /* font-weight: 500; */
   font-size: 1.4rem;
-  /* margin: 0 10px; */
   text-align: center;
 }
 
 #sleep-details-notes p{
-  /* background-color: red; */
-  /* margin: 0 20px; */
   margin-top: 5px;
   margin-bottom: 20px;
   word-break: break-word;
@@ -60,11 +41,9 @@
 }
 
 #sleep-details-notes h3 {
-  /* text-align: center; */
   margin: 0;
 }
 
 #sleep-details-div {
-  /* background-color: red; */
   padding-bottom: 80px;
 }

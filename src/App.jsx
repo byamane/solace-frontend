@@ -57,7 +57,7 @@ const App = () => {
 
   const addJournal = async (journalData) => {
     const journal =  await journalService.create(journalData)
-    setJournalEntries([...journalEntries, journal])
+    setJournalEntries([journal, ...journalEntries])
   }
 
   const updateJournal = async (journalData) => {
@@ -83,10 +83,9 @@ const App = () => {
   }
 
   const bgImg = [bg0, bg1, bg2, bg3, bg4, bg5, bg6, bg7]
-  // let currentBg = null
+
   const handleBgChange = (idx) => {
     setBg(idx)
-    // console.log(bg)
   }
 
   return (
@@ -235,11 +234,11 @@ const App = () => {
           } 
         />
       </Routes>
-      {user ? 
-        <NavBarBot handleLogout={handleLogout} />
-      :
-        <></>
-      }
+        {user ? 
+          <NavBarBot handleLogout={handleLogout} />
+        :
+          <></>
+        }
     </div>
   )
 }

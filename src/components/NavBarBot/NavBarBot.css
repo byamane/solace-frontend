@@ -1,5 +1,4 @@
 .bot-nav-icon {
-  /* color: #4a20c7; */
   color: white;
   font-size: 40px;
   padding: 5px;
@@ -9,26 +8,17 @@
   background-color: rgba(10, 10, 10, 0.8);
 }
 
-/* .bot-nav-icon:hover {
-  cursor: pointer;
-  background-color: #c7aaff;
-  color: black;
-} */
-
 .navbar-links {
   margin: 0 auto;
   margin-top: 3px;
 }
 
 .navbar-bottom {
-  /* --nav-bg-color: #ac61a9 !important;
-  background-color: var(--nav-bg-color); */
   width: 100%;
   margin-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  /* border-top: 1px solid rgb(37, 2, 63); */
   position: fixed;
   bottom: 0;
 }

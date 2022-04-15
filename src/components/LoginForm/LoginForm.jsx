@@ -63,9 +63,15 @@ const LoginForm = props => {
         />
       </div>
       <div className='login-signup-btns-container'>
-        <button id='log-in-btn'>Log In</button>
+        <button id='log-in-btn'
+        >
+          Log In
+        </button>
         <Link to="/signup">
-          <button id='sign-up-btn'>Sign up</button>
+          <button id='sign-up-btn'
+          >
+            Sign up
+          </button>
         </Link>
       </div>
     </form>

@@ -1,17 +1,11 @@
-// import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import { useLocation, Link } from "react-router-dom";
-// import { useState } from 'react';
 import './SleepDetails.css'
 import Header from "../../components/Header/Header";
 
 const SleepDetails = (props) => {
   const location = useLocation()
-  console.log(location.state)
-  // const [sleep, setSleep] = useState(location.state)
   const sleep = location.state
-  console.log(sleep)
   const sleepDate = new Date(`${sleep.date} EST`).toLocaleDateString()
-  // console.log(props)
 
   return (  
     <>
@@ -51,9 +45,7 @@ const SleepDetails = (props) => {
             <p>{sleep.notes}</p>
           </div>
         </div>
-
       </div>
-      {/* <NavBarBot /> */}
     </>
   );
 }

@@ -16,7 +16,6 @@ const SleepInput = (props) => {
           value={form.name ? form.name : ''}
         />
       </div>
-      {/* <br /> */}
       <div id='add-sleep-date-container'>
         <label htmlFor="">Date: </label>
         <input 
@@ -31,9 +30,7 @@ const SleepInput = (props) => {
             new Date().toISOString().substring(0,10)
           }
         />
-        {/* {console.log(new Date().toISOString().substring(0,10))} */}
       </div>
-      {/* <br /> */}
       <div id="add-sleep-rating-container">
         <label htmlFor="add-sleep-rating">Rating: </label>
         <select 
@@ -49,7 +46,6 @@ const SleepInput = (props) => {
           <option value={5}>5</option>
         </select>
       </div>
-      {/* <br /> */}
       <div id="add-sleep-notes-container">
         <label htmlFor="add-sleep-notes">Notes: </label>
         <br />
