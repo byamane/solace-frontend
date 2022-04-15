@@ -1,19 +1,18 @@
 # Solace
 
-A fullstack application built with React, Node.js, Python, Flask, and PostgreSQL. Solace offers full CRUD capabilities on multiple models that allows you to log, track, and manage your sleep, personal journal as well as meditation. The app utilizes JSON Web Token for authorization/authentication, and PostgreSQL models/tables for data structures. The app is deployed to Heroku and can be accessed and used [here](). 
+A mobile-focused fullstack application built with React, Node.js, Python, Flask, and PostgreSQL. Solace offers full CRUD capabilities on multiple models that allows you to log, track, & manage your sleep, personal journal as well as meditate. This app utilizes JSON Web Token for authorization/authentication, and PostgreSQL models/tables for data structures. The app is deployed to Netlify/Heroku and can be accessed [here](https://my-solace.netlify.app/). 
  
 ![hero image]()
  
 ### The Team
-Both of us did extensive work in the front end (React/Node.js) and back end (Python/Flask/PostgreSQL) for this application, leveraging Git team workflow & Agile methodologies to manage our different tasks each day during this one-week sprint.
+Both of us did extensive work in the front end (React/Node.js) & back end (Python/Flask/PostgreSQL) for this application, leveraging Git team workflow & Agile methodologies to manage our different tasks each day during this four-day sprint.
 + [Brandon](https://github.com/byamane/) @byamane
 + [Justin](https://github.com/vongdara16/) @vongdara16
  
 ### About Solace
-Placeholder text
  
 #### **Mission statement:**
-Solace aims to promote mindfulness & mental health. Starting off initially as an idea for a sleep tracker app, we realized the potential for this application as a vehicle to encourage self-care in a larger capacity.
+Solace aims to promote mindfulness & mental health. Starting off initially as an idea for a sleep tracker app, we realized the potential for this application as a vehicle to encourage self-care in a larger scope.
  
 The app intends to provide users with a platform to tune in with how they are feeling on a daily basis.
  
@@ -39,8 +38,15 @@ To use this app, all you need to get going is to create an account! From there, 
 + [Trello](https://trello.com/b/xBlxxm6o/unit-4-project-solace)
  
 ### Stretch Goals
-+ Placeholder text
+- [x] Add audio player to meditation section
+- [x] Allow users to choose different style themes
+- [ ] Add styling for desktop
+- [ ] Search bar function
+- [ ] Scrollable theme selector display
+- [ ] User can upload their own theme
+- [ ] User can set custom meditation timers
  
 ### Credits
 + Favicon & logo created from [Free Logo Maker](https://www.freelogodesign.org/logo-maker)
++ Background sleep/journal card images from [Canva](https://www.canva.com/) 
 + Music from [Alex-Productions](https://www.youtube.com/channel/UCx0_M61F81Nfb-BRXE-SeVA) & [Spheria](https://soundcloud.com/spheriamusic)
