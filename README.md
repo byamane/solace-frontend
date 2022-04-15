@@ -2,7 +2,7 @@
 
 A mobile-focused fullstack application built with React, Node.js, Python, Flask, and PostgreSQL. Solace offers full CRUD capabilities on multiple models that allows you to log, track, & manage your sleep, personal journal as well as meditate. This app utilizes JSON Web Token for authorization/authentication, and PostgreSQL models/tables for data structures. The app is deployed to Netlify/Heroku and can be accessed [here](https://my-solace.netlify.app/). 
  
-![hero image]()
+![hero image](https://i.imgur.com/GNbBzGg.png)
  
 ### The Team
 Both of us did extensive work in the front end (React/Node.js) & back end (Python/Flask/PostgreSQL) for this application, leveraging Git team workflow & Agile methodologies to manage our different tasks each day during this four-day sprint.
@@ -11,7 +11,6 @@ Both of us did extensive work in the front end (React/Node.js) & back end (Pytho
  
 ### About Solace
  
-#### **Mission statement:**
 Solace aims to promote mindfulness & mental health. Starting off initially as an idea for a sleep tracker app, we realized the potential for this application as a vehicle to encourage self-care in a larger scope.
  
 The app intends to provide users with a platform to tune in with how they are feeling on a daily basis.
