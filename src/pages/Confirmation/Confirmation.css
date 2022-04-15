@@ -1,0 +1,75 @@
+#delete-conf-container {
+  border: 2px solid white;
+  background-color: rgba(10, 10, 10, 0.8);
+  margin: 0 40px;
+  margin-top: 20px;
+  padding: 20px 20px;
+  /* height: 70vh; */
+}
+
+#delete-conf-title h2 {
+  /* color: red; */
+  font-size: 2.8rem;
+  text-shadow: 1px 1px 6px black;
+  margin: 20px auto;
+  /* margin: 0; */
+}
+
+#delete-conf-msg {
+  font-size: 1.6rem;
+  /* margin: 0 20px; */
+  margin: 0;
+}
+
+#delete-name {
+  font-size: 1.2rem;
+  margin: 0;
+  /* margin-bottom: 20px; */
+}
+
+#delete-btns-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  /* position: fixed;
+  bottom: 75px; */
+  /* margin: 0 auto; */
+  /* margin-top: 20px; */
+}
+
+#delete-btns-container button {
+  color: white;
+  width: 180px;
+  height: 40px;
+  font-size: 1.6rem;
+  /* margin: 20px 10px; */
+  margin: 0 auto;
+  margin-top: 20px;
+  border: 1px solid white;
+  border-radius: 2px;
+  font-family: 'Raleway', sans-serif;
+  box-shadow: 2px 2px 3px black;
+
+
+}
+
+#delete-conf-delete {
+  background-color: rgba(214, 73, 51, 1);
+}
+
+#delete-conf-cancel {
+  background-color: slategray;
+}
+
+/* #sleep-details-btns button {
+  width: 100px;
+  height: 40px;
+  font-size: 1.4rem;
+  margin: 0 10px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px 3px black;
+  border: 1px solid white;
+  border-radius: 2px;
+  color: white;
+  font-family: "Raleway", sans-serif;
+} */

@@ -30,34 +30,42 @@ const LoginForm = props => {
     <form
       autoComplete="off"
       onSubmit={handleSubmit}
-      className='container'
+      className='login-signup-form-container'
     >
-      <div className='inputContainer'>
-        <label htmlFor="email" className='label'>Email</label>
+      <div className='input-container'>
+        <label htmlFor="email"
+        >
+          Email: 
+        </label>
+        <br />
         <input
           type="text"
           autoComplete="off"
-          id="email"
+          id="login-email"
           value={formData.email}
           name="email"
           onChange={handleChange}
         />
       </div>
-      <div className='inputContainer'>
-        <label htmlFor="password" className='label'>Password</label>
+      <div className='input-container'>
+        <label htmlFor="password"
+        >
+          Password: 
+        </label>
+        <br />
         <input
           type="password"
           autoComplete="off"
-          id="password"
+          id="login-password"
           value={formData.password}
           name="password"
           onChange={handleChange}
         />
       </div>
-      <div>
-        <button className='button'>Log In</button>
+      <div className='login-signup-btns-container'>
+        <button id='log-in-btn'>Log In</button>
         <Link to="/signup">
-          <button>Sign up</button>
+          <button id='sign-up-btn'>Sign up</button>
         </Link>
       </div>
     </form>
