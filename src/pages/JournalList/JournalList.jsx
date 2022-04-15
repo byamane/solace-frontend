@@ -6,14 +6,14 @@ import * as journalService from '../../services/journalService'
 import Header from "../../components/Header/Header";
 import "./JournalList.css"
 
-import journal1 from '../../assets/journal1.png'
-import journal2 from '../../assets/journal2.png'
-import journal3 from '../../assets/journal3.png'
-import journal4 from '../../assets/journal4.png'
-import journal5 from '../../assets/journal5.png'
-import journal6 from '../../assets/journal6.png'
-import journal7 from '../../assets/journal7.png'
-import journal8 from '../../assets/journal8.png'
+import journal1 from '../../assets/journal_1.png'
+import journal2 from '../../assets/journal_2.png'
+import journal3 from '../../assets/journal_3.png'
+import journal4 from '../../assets/journal_4.png'
+import journal5 from '../../assets/journal_5.png'
+import journal6 from '../../assets/journal_6.png'
+import journal7 from '../../assets/journal_7.png'
+import journal8 from '../../assets/journal_8.png'
 
 const JournalList = (props) => {
   
