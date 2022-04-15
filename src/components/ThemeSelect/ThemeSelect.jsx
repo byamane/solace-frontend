@@ -1,7 +1,6 @@
 import './ThemeSelect.css'
 
 const ThemeSelect = (props) => {
-  // console.log(props)
   return (  
     <>
       <div id='theme-btns-container'>
@@ -12,7 +11,6 @@ const ThemeSelect = (props) => {
           }}
           onClick={() => props.handleBgChange(props.idx)}
         >
-          {/* Theme */}
         </button>
       </div>
     </>

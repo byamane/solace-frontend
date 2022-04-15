@@ -1,4 +1,3 @@
-// import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import JournalCard from "../../components/JournalCard/JournalCard";
 import { Link } from "react-router-dom";
 import { useEffect } from 'react';
@@ -41,13 +40,16 @@ const JournalList = (props) => {
       {props.journalEntries.length ? 
         <div id="journal-card-container">
           {props.journalEntries.map((journal, idx) => 
-            <JournalCard key={idx} journal={journal} journalImgs={journalImgs}/>
+            <JournalCard 
+              key={idx} 
+              journal={journal} 
+              journalImgs={journalImgs}
+            />
           )}
         </div>
       :
         <></>
       }
-    {/* <NavBarBot/> */}
     </>
   );
 }

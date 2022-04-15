@@ -1,14 +1,10 @@
 #add-sleep-title-container {
-  /* color: red; */
-  /* font-size: 1.4rem; */
   margin-bottom: 10px;
-  /* font-weight: 700; */
 }
 
 #add-sleep-title {
   font-size: 1.2rem;
   width: 50vw;
-  /* margin-bottom: 10px; */
 }
 
 #add-sleep-date-container {
@@ -27,11 +23,8 @@
 #add-sleep-rating {
   width: 30vw;
   font-size: 1.2rem;
-  /* text-align: right; */
 }
 
 #add-sleep-notes {
   margin: 5px auto;
-  /* margin-top: 10px; */
-  /* white-space: pre-wrap; */
 }

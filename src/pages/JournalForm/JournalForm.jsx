@@ -1,4 +1,3 @@
-// import NavBarBot from "../../components/NavBarBot/NavBarBot";
 import JournalInput from "../../components/JournalInput/JournalInput";
 import Header from "../../components/Header/Header";
 import { useState, useEffect } from 'react';
@@ -66,7 +65,6 @@ const JournalForm = (props) => {
           </div>
         </div>
       </form>
-      {/* <NavBarBot /> */}
     </>
   );
 }

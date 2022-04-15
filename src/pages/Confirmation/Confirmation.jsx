@@ -18,8 +18,6 @@ const Confirmation = (props) => {
   }
 
   const delName = state.name.length > 75 ? `${state.name.substring(0,75)}...` : state.name
-  // console.log(state.name.length)
-  // console.log('delName', delName.length)
 
   return (
     <>
@@ -33,7 +31,6 @@ const Confirmation = (props) => {
           <h4 id='delete-name'>{delName}</h4>
         </div>
         <div id='delete-btns-container'>
-          {/* <br /> */}
           <button 
             onClick={handleDelete} 
             type="button"
