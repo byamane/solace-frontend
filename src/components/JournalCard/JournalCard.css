@@ -40,3 +40,19 @@
 #journal-mood {
   color: rgba(0,0,0,1);
 }
+
+/* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen AND (min-width: 1024px) {
+  #journal-card {
+    width: 50vw;
+    height: 25vh;
+  }
+}
+
+/* =========== MEDIA QUERIES (XL DEVICES) ========== */
+@media screen AND (min-width: 1800px) {
+  #journal-card {
+    width: 40vw;
+    height: 30vh;
+  }
+}

@@ -19,6 +19,7 @@ const SleepCard = (props) => {
             backgroundImage: `url(${props.sleepImgs[imgIdx]})`,
             backgroundRepeat: 'no-repeat',
             backgroundSize: 'cover',
+            backgroundPosition: 'center',
           }}
         >
           <div id="sleep-card-title">
