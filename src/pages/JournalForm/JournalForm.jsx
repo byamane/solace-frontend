@@ -46,24 +46,26 @@ const JournalForm = (props) => {
         }
       </div>
       <form onSubmit={handleSubmit}>
-        <div id="journal-form-input-container">
-          <JournalInput 
-            form={form}
-            handleChange={handleChange}
-          />
-          <div id="add-journal-btn-container">
-            <button
-              type="submit"
-              id="add-journal-change-btn"
-            >
-              {id ? 
-                'Update'
-              :
-                'Add'
-              }
-            </button>
+        <section id="journal-form-section">  
+          <div id="journal-form-input-container">
+            <JournalInput 
+              form={form}
+              handleChange={handleChange}
+            />
+            <div id="add-journal-btn-container">
+              <button
+                type="submit"
+                id="add-journal-change-btn"
+              >
+                {id ? 
+                  'Update'
+                :
+                  'Add'
+                }
+              </button>
+            </div>
           </div>
-        </div>
+        </section>
       </form>
     </>
   );

@@ -47,26 +47,26 @@ const SleepForm = (props) => {
         }
       </div>
       <form onSubmit={handleSubmit}>
-        <div id="sleep-form-section">
-        <div id="sleep-form-input-container">
-          <SleepInput 
-            form={form}
-            handleChange={handleChange}
-            />
-          <div id="add-sleep-btn-container">
-            <button
-              type="submit"
-              id="add-sleep-btn"
-              >
-              {id ? 
-                'Update'
-              :
-                'Add'
-              }
-            </button>
+        <section id="sleep-form-section">
+          <div id="sleep-form-input-container">
+            <SleepInput 
+              form={form}
+              handleChange={handleChange}
+              />
+            <div id="add-sleep-btn-container">
+              <button
+                type="submit"
+                id="add-sleep-btn"
+                >
+                {id ? 
+                  'Update'
+                :
+                  'Add'
+                }
+              </button>
+            </div>
           </div>
-        </div>
-        </div>
+        </section>
       </form>
     </>
   );

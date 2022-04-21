@@ -24,3 +24,22 @@
   box-shadow: 2px 2px 3px black;
   color: white;
 }
+
+/* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen AND (min-width: 1024px) {
+  #journal-form-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  #journal-form-input-container {
+    width: 50vw;
+  }
+}
+
+/* =========== MEDIA QUERIES (XL DEVICES) ========== */
+@media screen AND (min-width: 1800px) {
+  #journal-form-input-container {
+    width: 40vw;
+  }
+}
