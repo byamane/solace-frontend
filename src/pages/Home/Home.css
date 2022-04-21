@@ -48,13 +48,13 @@
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
 @media screen AND (min-width: 600px) {
   #home-title-img {
+    height: 20vh;
     width: 50vw;
-    height: 15vh;
   }
 }
 
 /* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
-@media screen AND (min-width: 1024px) {
+@media screen AND (min-width: 1100px) {
   #home-title-img {
     width: 40vw;
     height: 20vh;
@@ -69,6 +69,7 @@
 @media screen AND (min-width: 2000px) {
   #home-title-img {
     width: 30vw;
+    height: auto;
     max-height: 25vh;
   }
 

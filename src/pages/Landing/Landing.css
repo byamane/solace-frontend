@@ -15,22 +15,27 @@
 @media screen AND (min-width: 600px) {
   #landing-title-img {
     height: 20vh;
+    width: 50vw;
   }
 }
 
 /* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
-@media screen AND (min-width: 1024px) {
+@media screen AND (min-width: 1100px) {
   #landing-title-img {
-    width: 50vw;
-    height: 30vh;
+    width: 40vw;
+    height: 20vh;
   }
 }
 
 /* =========== MEDIA QUERIES (XL DEVICES) ========== */
 @media screen AND (min-width: 2000px) {
   #landing-title-img {
-    width: 40vw;
+    width: 30vw;
     height: auto;
-    max-height: 30vh;
+    max-height: 25vh;
+  }
+
+  #log-in-msg {
+    margin-top: 5vh;
   }
 }

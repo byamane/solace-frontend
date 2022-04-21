@@ -32,5 +32,26 @@
   font-size: 1.4rem;
   margin-top: 20px;
   font-family: 'Raleway', sans-serif;
-  
+}
+
+/* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen AND (min-width: 1024px) {
+  .login-signup-form-container {
+    width: 50vw;
+  }
+
+  .input-container input {
+    width: 40vw;
+  }
+}
+
+/* =========== MEDIA QUERIES (XL DEVICES) ========== */
+@media screen AND (min-width: 2000px) {
+  .login-signup-form-container {
+    width: 40vw;
+  }
+
+  .input-container input {
+    width: 30vw;
+  }
 }
