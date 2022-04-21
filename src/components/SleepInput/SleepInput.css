@@ -28,3 +28,47 @@
 #add-sleep-notes {
   margin: 5px auto;
 }
+
+/* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen AND (min-width: 1024px) {
+  #add-sleep-title {
+    font-size: 1.2rem;
+    width: 30vw;
+  }
+
+  #add-sleep-date {
+    font-size: 1.2rem;
+    width: 30vw;
+  }
+
+  #add-sleep-rating {
+    width: 30vw;
+    font-size: 1.2rem;
+  }
+
+  #add-sleep-notes {
+    width: 30vw;
+  }
+}
+
+/* =========== MEDIA QUERIES (XL DEVICES) ========== */
+@media screen AND (min-width: 1800px) {
+  #add-sleep-title {
+    font-size: 1.2rem;
+    width: 25vw;
+  }
+
+  #add-sleep-date {
+    font-size: 1.2rem;
+    width: 25vw;
+  }
+
+  #add-sleep-rating {
+    width: 25vw;
+    font-size: 1.2rem;
+  }
+
+  #add-sleep-notes {
+    width: 20vw;
+  }
+}

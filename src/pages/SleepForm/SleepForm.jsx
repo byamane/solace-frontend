@@ -47,6 +47,7 @@ const SleepForm = (props) => {
         }
       </div>
       <form onSubmit={handleSubmit}>
+        <div id="sleep-form-section">
         <div id="sleep-form-input-container">
           <SleepInput 
             form={form}
@@ -64,6 +65,7 @@ const SleepForm = (props) => {
               }
             </button>
           </div>
+        </div>
         </div>
       </form>
     </>
