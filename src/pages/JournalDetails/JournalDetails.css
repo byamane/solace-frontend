@@ -40,3 +40,34 @@
   margin-top: 10px;
   text-align: center;
 }
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen AND (min-width: 600px) {
+  #journal-details-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  #journal-details-container {
+    width: 75vw;
+  }
+
+  #journal-details-btns {
+    margin-top: 15px;
+  }
+}
+
+/* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen AND (min-width: 1024px) {
+  #journal-details-container {
+    width: 50vw;
+  }
+  
+}
+
+/* =========== MEDIA QUERIES (XL DEVICES) ========== */
+@media screen AND (min-width: 1800px) {
+  #journal-details-container {
+    width: 40vw;
+  }
+}
