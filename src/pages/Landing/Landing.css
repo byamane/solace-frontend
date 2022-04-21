@@ -10,3 +10,27 @@
   font-size: 1.8rem;
   margin-top: 10vh;
 }
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen AND (min-width: 600px) {
+  #landing-title-img {
+    height: 20vh;
+  }
+}
+
+/* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen AND (min-width: 1024px) {
+  #landing-title-img {
+    width: 50vw;
+    height: 30vh;
+  }
+}
+
+/* =========== MEDIA QUERIES (XL DEVICES) ========== */
+@media screen AND (min-width: 2000px) {
+  #landing-title-img {
+    width: 40vw;
+    height: auto;
+    max-height: 30vh;
+  }
+}

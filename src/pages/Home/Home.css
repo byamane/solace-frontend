@@ -28,9 +28,6 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-}
-
-#theme-select-container {
   padding-bottom: 80px;
 }
 
@@ -46,4 +43,38 @@
   height: 10vh;
   object-fit: cover;
   margin: 2vh auto;
+}
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen AND (min-width: 600px) {
+  #home-title-img {
+    height: 15vh;
+  }
+
+  #theme-card-container {
+    margin: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-bottom: 80px;
+  }
+}
+
+/* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen AND (min-width: 1024px) {
+  #home-title-img {
+    width: 50vw;
+    height: 20vh;
+  }
+}
+
+/* =========== MEDIA QUERIES (XL DEVICES) ========== */
+@media screen AND (min-width: 2000px) {
+  #home-title-img {
+    width: 40vw;
+    height: auto;
+    max-height: 25vh;
+  }
 }
