@@ -47,3 +47,30 @@
 #sleep-details-div {
   padding-bottom: 80px;
 }
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen AND (min-width: 600px) {
+  #sleep-details-div {
+    display: flex;
+    justify-content: center;
+  }
+
+  #sleep-details-container {
+    width: 75vw;
+  }
+}
+
+/* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen AND (min-width: 1024px) {
+  #sleep-details-container {
+    width: 50vw;
+  }
+  
+}
+
+/* =========== MEDIA QUERIES (XL DEVICES) ========== */
+@media screen AND (min-width: 1800px) {
+  #sleep-details-container {
+    width: 40vw;
+  }
+}
