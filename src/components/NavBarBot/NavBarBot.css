@@ -38,3 +38,21 @@
 #self-improve:hover {
   background-color: #f08080;
 }
+
+/* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen AND (min-width: 1024px) {
+  .bot-nav-icon {
+    font-size: 60px;
+  } 
+}
+
+/* =========== MEDIA QUERIES (XL DEVICES) ========== */
+@media screen AND (min-width: 1800px) {
+  .bot-nav-icon {
+    font-size: 80px;
+  }
+
+  .navbar-bottom {
+    margin-bottom: 10px;
+  }
+}

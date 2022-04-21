@@ -6,3 +6,19 @@
   background-size: 40vw;
   background-color: rgba(10, 10, 10, 0.8);
 }
+
+/* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen AND (min-width: 1024px) {
+  #header-title-container {
+    height: 10vh;
+    background-size: 20vw;
+  }
+}
+
+/* =========== MEDIA QUERIES (XL DEVICES) ========== */
+@media screen AND (min-width: 2000px) {
+  #header-title-container {
+    height: 10vh;
+    background-size: 15vw;
+  }
+}

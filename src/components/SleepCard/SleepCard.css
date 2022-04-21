@@ -31,3 +31,18 @@
   display: flex;
   justify-content: space-between;
 }
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen AND (min-width: 600px) {
+  
+}
+
+/* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen AND (min-width: 1024px) {
+
+}
+
+/* =========== MEDIA QUERIES (XL DEVICES) ========== */
+@media screen AND (min-width: 2000px) {
+ 
+}

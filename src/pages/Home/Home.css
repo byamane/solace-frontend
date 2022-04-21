@@ -48,33 +48,35 @@
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
 @media screen AND (min-width: 600px) {
   #home-title-img {
+    width: 50vw;
     height: 15vh;
-  }
-
-  #theme-card-container {
-    margin: 0 20px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    gap: 20px;
-    padding-bottom: 80px;
   }
 }
 
 /* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
 @media screen AND (min-width: 1024px) {
   #home-title-img {
-    width: 50vw;
+    width: 40vw;
     height: 20vh;
+  }
+
+  #theme-card-container {
+    padding-bottom: 100px;
   }
 }
 
 /* =========== MEDIA QUERIES (XL DEVICES) ========== */
 @media screen AND (min-width: 2000px) {
   #home-title-img {
-    width: 40vw;
-    height: auto;
+    width: 30vw;
     max-height: 25vh;
+  }
+
+  #theme-card-container {
+    padding-bottom: 120px;
+  }
+
+  .hp-footer {
+    font-size: 1.5rem;
   }
 }
