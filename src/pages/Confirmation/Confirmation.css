@@ -51,7 +51,7 @@
 
 /* =========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
 @media screen AND (min-width: 600px) {
-  #yayaya {
+  #delete-confirmation-section {
     display: flex;
     justify-content: center;
   }
