@@ -51,9 +51,9 @@ To use this app, all you need to get going is to create an account! From there, 
 ***
 
 ### Stretch Goals
-- [x] Add audio player to meditation section
-- [x] Allow users to choose different style themes
-- [ ] Add styling for desktop
+- [x] *Add audio player to meditation section **(Completed: 4/14/21)***
+- [x] *Allow users to choose different style themes **(Completed: 4/15/21)***
+- [x] *Add styling for desktop **(Completed: 4/21/21)***
 - [ ] Search bar function
 - [ ] Scrollable theme selector display
 - [ ] User can upload their own theme

@@ -25,12 +25,12 @@ const Confirmation = (props) => {
         <div className="page-header" id='delete-conf-title'>
           <h2>Delete Confirmation</h2>
         </div>
-        <div id="yayaya">
-        <div id='delete-conf-container'>
-          <h2 id='delete-conf-msg'>Are you sure you want to delete: </h2>
-          <br /> 
-          <h4 id='delete-name'>{delName}</h4>
-        </div>
+        <div id="delete-confirmation-section">
+          <div id='delete-conf-container'>
+            <h2 id='delete-conf-msg'>Are you sure you want to delete: </h2>
+            <br /> 
+            <h4 id='delete-name'>{delName}</h4>
+          </div>
         </div>
         <div id='delete-btns-container'>
           <button 
