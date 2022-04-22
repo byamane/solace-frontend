@@ -24,3 +24,22 @@
   display: flex;
   flex-direction: column;
 }
+
+/* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen AND (min-width: 1024px) {
+  #sleep-form-section {
+    display: flex;
+    justify-content: center;
+  }
+
+  #sleep-form-input-container {
+    width: 50vw;
+  }
+}
+
+/* =========== MEDIA QUERIES (XL DEVICES) ========== */
+@media screen AND (min-width: 1800px) {
+  #sleep-form-input-container {
+    width: 40vw;
+  }
+}

@@ -28,9 +28,6 @@
   justify-content: center;
   align-items: center;
   gap: 20px;
-}
-
-#theme-select-container {
   padding-bottom: 80px;
 }
 
@@ -46,4 +43,41 @@
   height: 10vh;
   object-fit: cover;
   margin: 2vh auto;
+}
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen AND (min-width: 600px) {
+  #home-title-img {
+    height: 20vh;
+    width: 50vw;
+  }
+}
+
+/* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen AND (min-width: 1100px) {
+  #home-title-img {
+    width: 40vw;
+    height: 20vh;
+  }
+
+  #theme-card-container {
+    padding-bottom: 100px;
+  }
+}
+
+/* =========== MEDIA QUERIES (XL DEVICES) ========== */
+@media screen AND (min-width: 2000px) {
+  #home-title-img {
+    width: 30vw;
+    height: auto;
+    max-height: 25vh;
+  }
+
+  #theme-card-container {
+    padding-bottom: 120px;
+  }
+
+  .hp-footer {
+    font-size: 1.5rem;
+  }
 }

@@ -11,3 +11,27 @@
 #theme-btn:focus {
   border: 2px solid lightgray;
 }
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen AND (min-width: 600px) {
+  #theme-btn {
+    width: 30vw;
+    height: 10vh;
+  }
+}
+
+/* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen AND (min-width: 1024px) {
+  #theme-btn {
+    width: 25vw;
+    height: 15vh;
+  }
+}
+
+/* =========== MEDIA QUERIES (XL DEVICES) ========== */
+@media screen AND (min-width: 1800px) {
+  #theme-btn {
+    width: 20vw;
+    height: 20vh;
+  }
+}

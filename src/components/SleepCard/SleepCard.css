@@ -31,3 +31,19 @@
   display: flex;
   justify-content: space-between;
 }
+
+/* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen AND (min-width: 1024px) {
+  #sleep-card {
+    width: 50vw;
+    height: 25vh;
+  }
+}
+
+/* =========== MEDIA QUERIES (XL DEVICES) ========== */
+@media screen AND (min-width: 1800px) {
+  #sleep-card {
+    width: 40vw;
+    height: 30vh;
+  }
+}

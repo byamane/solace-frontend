@@ -48,3 +48,43 @@
 #delete-conf-cancel {
   background-color: slategray;
 }
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen AND (min-width: 600px) {
+  #yayaya {
+    display: flex;
+    justify-content: center;
+  }
+
+  #delete-conf-container {
+    width: 75vw;
+    margin-top: 10px;
+  }
+
+  #delete-conf-title h2 {
+    font-size: 3.5rem;
+    margin-top: 30px;
+  } 
+}
+
+/* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen AND (min-width: 1024px) {
+  #delete-conf-container {
+    width: 50vw;
+  }
+
+  #delete-conf-title h2 {
+    font-size: 4rem;
+  } 
+}
+
+/* =========== MEDIA QUERIES (XL DEVICES) ========== */
+@media screen AND (min-width: 1800px) {
+  #delete-conf-container {
+    width: 40vw;
+  }
+
+  #delete-conf-title h2 {
+    font-size: 4.5rem;
+  } 
+}

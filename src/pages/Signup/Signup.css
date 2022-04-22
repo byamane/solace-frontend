@@ -9,3 +9,28 @@
   height: 50px;
   font-size: 1.8rem;
 }
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen AND (min-width: 600px) {
+  #signup-title-img {
+    height: 20vh;
+    width: 50vw;
+  }
+}
+
+/* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen AND (min-width: 1100px) {
+  #signup-title-img {
+    width: 40vw;
+    height: 20vh;
+  }
+}
+
+/* =========== MEDIA QUERIES (XL DEVICES) ========== */
+@media screen AND (min-width: 2000px) {
+  #signup-title-img {
+    width: 30vw;
+    height: auto;
+    max-height: 25vh;
+  }
+}

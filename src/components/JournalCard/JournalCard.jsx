@@ -24,6 +24,7 @@ const JournalCard = ({journal, journalImgs}) => {
           backgroundImage: `url(${journalImgs[imgIdx]})`,
           backgroundRepeat: 'no-repeat',
           backgroundSize: 'cover',
+          backgroundPosition: 'center',
         }}>
         <h2 id="journal-card-title">{journalName}</h2>
         <div id="journal-card-footer">

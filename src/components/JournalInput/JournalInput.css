@@ -28,3 +28,54 @@
 #add-journal-section {
   margin: 5px auto;
 }
+
+/* =========== MEDIA QUERIES (MEDIUM DEVICES) ========== */
+@media screen AND (min-width: 550px) {
+  #add-journal-section {
+    width: 75vw;
+  }
+}
+
+/* =========== MEDIA QUERIES (LARGE DEVICES) ========== */
+@media screen AND (min-width: 1024px) {
+  #add-journal-title {
+    font-size: 1.2rem;
+    width: 30vw;
+  }
+
+  #add-journal-date {
+    font-size: 1.2rem;
+    width: 30vw;
+  }
+
+  #add-journal-mood {
+    width: 30vw;
+    font-size: 1.2rem;
+  }
+
+  #add-journal-section {
+    width: 40vw;
+  }
+}
+
+/* =========== MEDIA QUERIES (XL DEVICES) ========== */
+@media screen AND (min-width: 1800px) {
+  #add-journal-title {
+    font-size: 1.2rem;
+    width: 25vw;
+  }
+
+  #add-journal-date {
+    font-size: 1.2rem;
+    width: 25vw;
+  }
+
+  #add-journal-mood {
+    width: 25vw;
+    font-size: 1.2rem;
+  }
+
+  #add-journal-section {
+    width: 35vw;
+  }
+}

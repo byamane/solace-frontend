@@ -13,8 +13,7 @@ const Home = (props) => {
         >
           Log your nightly sleep, reflect on your day in your journal, and practice mindfulness through meditation
         </h4>
-        <div id="theme-select-container">
-          <h3 id="select-theme-title">Select a Theme</h3>
+        <h3 id="select-theme-title">Select a Theme</h3>
           <div id="theme-card-container">
           {props.bgImg.map((img, idx) => 
             <ThemeSelect
@@ -25,11 +24,10 @@ const Home = (props) => {
             />
             )}
           </div>
-        </div>
         <h4 className="hp-footer">Click on one of the icons below to begin</h4>
       </div>
     </>
   );
 }
- 
+
 export default Home;
